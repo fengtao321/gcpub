@@ -1,0 +1,10 @@
+@import url("https://publications.gc.ca/boew-wet/wet4.0ca/GCWeb/css/theme.min.css");
+.InsideCarousel a {
+  color: #2572b4 !important;
+  text-decoration: underline !important;
+}
+
+.InsideCarousel a:visited {
+  color: #2572b4 !important;
+  text-decoration: underline !important;
+}
