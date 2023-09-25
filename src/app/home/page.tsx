@@ -1,5 +1,7 @@
 import "./page.css";
 
+import Header from "../header/header";
+
 export default function Home() {
   return (
     <>
@@ -34,7 +36,7 @@ export default function Home() {
                       id="ssti"
                       name="ssti"
                       type="checkbox"
-                      checked={true}
+                      defaultChecked={true}
                     />
                     <label htmlFor="ssti">
                       Find variations of search terms
@@ -85,7 +87,7 @@ export default function Home() {
                     id="adof"
                     name="adof"
                     type="checkbox"
-                    checked={true}
+                    defaultChecked={true}
                   />
                   <label htmlFor="adof">
                     View electronic publications only

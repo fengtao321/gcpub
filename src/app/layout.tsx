@@ -1,6 +1,7 @@
 import "./globals.css";
 
-import Header from "./header";
+import Footer from "./footer/footer";
+import Header from "./header/header";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import Script from "next/script";
@@ -20,19 +21,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          async
-          src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"
-        ></script>
-        <script
-          async
-          src="https://publications.gc.ca/boew-wet/wet4.0ca/wet-boew/js/wet-boew.min.js"
-        ></script>
+        <Script src="js/jquery-2.2.4.min.js" />
+        <Script src="js/header.js" />
+        <Script src="js/ep-pp.min.js" />
+        <Script src="js/wet-boew.min.js" />
+        <Script src="js/theme.min.js" />
+        <Script src="js/gc-thematique.min.js" />
       </head>
 
       <body className={inter.className}>
         <Header></Header>
         <main> {children}</main>
+        <Footer></Footer>
       </body>
     </html>
   );

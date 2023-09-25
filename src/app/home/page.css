@@ -1,4 +1,5 @@
-@import url("https://publications.gc.ca/boew-wet/wet4.0ca/GCWeb/css/theme.min.css");
+/* @import url("https://publications.gc.ca/boew-wet/wet4.0ca/GCWeb/css/theme.min.css"); */
+@import url("../../../public/css/theme.min.css");
 .InsideCarousel a {
   color: #2572b4 !important;
   text-decoration: underline !important;
