@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import sigBlkEnPic from "../../../../public/assets/sig-blk-en.svg";
+import sigBlkEnPic from "../../../../public/assets/sig-blk-fr.svg";
 
 export default function Header({ href }) {
   return (
@@ -11,21 +11,21 @@ export default function Header({ href }) {
             id="wb-lng"
             className="col-xs-3 col-sm-12 pull-right text-right"
           >
-            <h2 className="wb-inv">Language selection</h2>
+            <h2 className="wb-inv">Sélection de la langue</h2>
             <div className="row">
               <div className="col-md-12">
                 <ul className="list-inline mrgn-bttm-0">
                   <li>
-                    <a lang="fr" href={href}>
+                    <a lang="en" href="en.html">
                       <span className="hidden-xs" translate="no">
-                        Fran&ccedil;ais
+                        English
                       </span>
                       <abbr
-                        title="Fran&ccedil;ais"
+                        title="English"
                         className="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"
                         translate="no"
                       >
-                        fr
+                        en
                       </abbr>
                     </a>
                   </li>
@@ -40,36 +40,38 @@ export default function Header({ href }) {
             typeof="GovernmentOrganization"
           >
             <link href={href} property="url" />
-
             <Image
               src={sigBlkEnPic}
-              alt="Government of Canada"
+              alt="Gouvernement du Canada"
               property="logo"
             />
             <span className="wb-inv">
               {" "}
-              /<span lang="fr">Gouvernement du Canada</span>
+              /<span lang="en">Government of Canada</span>
             </span>
 
-            <meta property="name" content="Government of Canada" />
+            <meta property="name" content="Gouvernement du Canada" />
             <meta property="areaServed" typeof="Country" content="Canada" />
-            <link property="logo" href="assets/wmms-blk.svg" />
+            <link
+              property="logo"
+              href="etc/designs/canada/wet-boew/assets/wmms-blk.svg"
+            />
           </div>
           <section
             id="wb-srch"
             className="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4"
           >
-            <h2>Search</h2>
+            <h2>Recherche</h2>
 
             <form
-              action="https://www.canada.ca/en/sr/srb.html"
+              action="https://www.canada.ca/fr/sr/srb.html"
               method="get"
               name="cse-search-box"
               role="search"
             >
               <div className="form-group wb-srch-qry">
                 <label htmlFor="wb-srch-q" className="wb-inv">
-                  Search Canada.ca
+                  Rechercher dans Canada.ca
                 </label>
 
                 <input
@@ -78,10 +80,10 @@ export default function Header({ href }) {
                   className="wb-srch-q form-control"
                   name="q"
                   type="search"
-                  defaultValue=""
+                  value=""
                   size={34}
                   maxLength={170}
-                  placeholder="Search Canada.ca"
+                  placeholder="Rechercher dans Canada.ca"
                 />
 
                 <datalist id="wb-srch-q-ac"></datalist>
@@ -94,7 +96,7 @@ export default function Header({ href }) {
                   name="wb-srch-sub"
                 >
                   <span className="glyphicon-search glyphicon"></span>
-                  <span className="wb-inv">Search</span>
+                  <span className="wb-inv">Recherche</span>
                 </button>
               </div>
             </form>
@@ -109,13 +111,17 @@ export default function Header({ href }) {
             <nav className="gcweb-menu" typeof="SiteNavigationElement">
               <h2 className="wb-inv">Menu</h2>
               <button type="button" aria-haspopup="true" aria-expanded="false">
-                <span className="wb-inv">Main </span>Menu
+                <span className="wb-inv">Principales </span>Menu{" "}
                 <span className="expicon glyphicon glyphicon-chevron-down"></span>
               </button>
-              <ul role="menu" aria-orientation="vertical">
+              <ul
+                role="menu"
+                aria-orientation="vertical"
+                data-ajax-replace="/content/dam/canada/sitemenu/sitemenu-v2-fr.html"
+              >
                 <li role="presentation">
                   <a role="menuitem" tabIndex={-1} href="en/services/jobs.html">
-                    Jobs and the workplace
+                    Emplois et milieu de travail
                   </a>
                 </li>
                 <li role="presentation">
@@ -124,21 +130,21 @@ export default function Header({ href }) {
                     tabIndex={-1}
                     href="en/services/immigration-citizenship.html"
                   >
-                    Immigration and citizenship
+                    Immigration et citoyenneté
                   </a>
                 </li>
                 <li role="presentation">
-                  <a role="menuitem" tabIndex={-1} href="https://travel.gc.ca/">
-                    Travel and tourism
+                  <a role="menuitem" tabIndex={-1} href="https://voyage.gc.ca/">
+                    Voyage et tourisme
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/business.html"
+                    href="fr/services/entreprises.html"
                   >
-                    Business and industry
+                    Entreprises et industrie
                   </a>
                 </li>
                 <li role="presentation">
@@ -147,61 +153,61 @@ export default function Header({ href }) {
                     tabIndex={-1}
                     href="en/services/benefits.html"
                   >
-                    Benefits
+                    Prestations
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/health.html"
+                    href="fr/services/sante.html"
                   >
-                    Health
+                    Santé
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/taxes.html"
+                    href="fr/services/impots.html"
                   >
-                    Taxes
+                    Impôts
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/environment.html"
+                    href="fr/services/environnement.html"
                   >
-                    Environment and natural resources
+                    Environnement et ressources naturelles
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/defence.html"
+                    href="fr/services/defense.html"
                   >
-                    National security and defence
+                    Sécurité nationale et défense
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/culture.html"
+                    href="fr/services/culture.html"
                   >
-                    Culture, history and sport
+                    Culture, histoire et sport
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/policing.html"
+                    href="fr/services/police.html"
                   >
-                    Policing, justice and emergencies
+                    Services de police, justice et urgences
                   </a>
                 </li>
                 <li role="presentation">
@@ -210,34 +216,34 @@ export default function Header({ href }) {
                     tabIndex={-1}
                     href="en/services/transport.html"
                   >
-                    Transport and infrastructure
+                    Transport et infrastructure
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="http://international.gc.ca/world-monde/index.aspx?lang=eng"
+                    href="http://international.gc.ca/world-monde/index.aspx?lang=fra"
                   >
-                    Canada and the world
+                    Canada et le monde
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/finance.html"
+                    href="fr/services/finance.html"
                   >
-                    Money and finances
+                    Argent et finances
                   </a>
                 </li>
                 <li role="presentation">
                   <a
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/science.html"
+                    href="fr/services/science.html"
                   >
-                    Science and innovation
+                    Science et innovation
                   </a>
                 </li>
               </ul>

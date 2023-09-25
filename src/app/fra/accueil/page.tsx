@@ -15,27 +15,30 @@ export default function Home() {
       <Script src="js/theme.min.js" />
       <Script src="js/gc-thematique.min.js" />
       <main role="main" property="mainContentOfPage" className="container">
-        <Header href="/fra/accueil.html"></Header>
+        <Header href="/eng/home.html"></Header>
         <h1 property="name" id="wb-cont" className="mrgn-tp-md">
-          Government of Canada Publications
+          Publications du gouvernement du Canada
         </h1>
 
         <div className="row">
           <div className="col-md-6">
             <p className="pagetag">
-              Search our catalogue of over 566,500 publications. Access more
-              than 445,700 digital publications.
+              Parcourez notre catalogue de plus de 566&nbsp;500 publications.
+              Accédez à plus de 445&nbsp;700 publications électroniques.
             </p>
             <section className="well well-lg">
-              <form action="/eng/search/search.html" method="get">
-                <h2 className="mrgn-tp-sm">Search publications</h2>
+              <form
+                action="https://publications.gc.ca/site/fra/recherche/recherche.html"
+                method="get"
+              >
+                <h2 className="mrgn-tp-sm">Chercher des publications</h2>
                 <input type="hidden" name="st" value="1" />
                 <input type="hidden" name="e" value="0" />
                 <input type="hidden" name="f" value="0" />
                 <fieldset>
                   <legend id="sfg" className="mrgn-bttm-md">
                     {" "}
-                    Search for
+                    Recherche pour
                   </legend>
                   <div className="checkbox-inline mrgn-bttm-sm">
                     <input
@@ -43,22 +46,24 @@ export default function Home() {
                       id="ssti"
                       name="ssti"
                       type="checkbox"
-                      defaultChecked={true}
+                      checked={true}
                     />
                     <label htmlFor="ssti">
-                      Find variations of search terms
+                      Trouver des variantes des termes recherchés
                     </label>
                   </div>
                   <p>
-                    <strong>At least one search term must be provided.</strong>
+                    <strong>
+                      Au moins un terme de recherche doit être fourni.
+                    </strong>
                   </p>
                   <div className="form-group mrgn-tp-md">
                     <label htmlFor="ast">
-                      Text{" "}
+                      Texte&nbsp;
                       <span className="small">
-                        (title, subtitle, series title, subject terms, abstract,
-                        author, department/agency) The AND operator is inserted
-                        by default
+                        (titre, sous-titre, titre de la série, descripteurs,
+                        résumé, auteur, ministère/organisme) L&apos;opérateur ET
+                        est inséré par défaut
                       </span>
                     </label>
                     <input
@@ -72,10 +77,10 @@ export default function Home() {
                   </div>
                   <div className="form-group mrgn-tp-md">
                     <label htmlFor="cnst">
-                      Control number{" "}
+                      Numéro de contrôle{" "}
                       <span className="small">
-                        (for example: catalogue number, International Standard
-                        Book Number [ISBN])
+                        (par exemple&nbsp;: numéro de catalogue, Numéro
+                        international normalise du livre [ISBN])
                       </span>
                     </label>
                     <input
@@ -91,13 +96,13 @@ export default function Home() {
                 <div className="checkbox-inline mrgn-tp-sm">
                   <input
                     className="form-checkbox"
-                    id="adof"
+                    id="adof1"
                     name="adof"
                     type="checkbox"
-                    defaultChecked={true}
+                    checked={true}
                   />
-                  <label htmlFor="adof">
-                    View electronic publications only
+                  <label htmlFor="adof1">
+                    Afficher seulement les publications électroniques
                   </label>
                 </div>
                 <div className="text-right mrgn-tp-sm">
@@ -105,17 +110,15 @@ export default function Home() {
                     type="submit"
                     className="btn btn-primary mrgn-bttm-md"
                   >
-                    Search
+                    Rechercher
                   </button>
                 </div>
                 <div className="text-right">
-                  {" "}
-                  <a href="https://publications.gc.ca/site/eng/search/advancedSearch.html">
-                    Advanced search
-                  </a>{" "}
-                  <a href="search/searchHelp.html" className="mrgn-lft-md">
-                    Get help with your search
-                  </a>{" "}
+                  <a href="https://publications.gc.ca/site/fra/recherche/rechercheAvancee.html">{`Recherche avancée`}</a>
+                  <a
+                    href="recherche/aideRecherche.html"
+                    className="mrgn-lft-md"
+                  >{`Aide à la recherche`}</a>
                 </div>
               </form>
             </section>
@@ -125,114 +128,182 @@ export default function Home() {
             <div className="wb-tabs carousel-s2">
               <ul role="tablist">
                 <li>
-                  <a className="active" href="#20230914">
-                    1<span className="wb-invisible">Science Literacy Week</span>
+                  <a className="active" href="#20230925">
+                    1
+                    <span className="wb-invisible">
+                      Provenant de la Liste hebdomadaire des acquisitions 23-38
+                      (22&nbsp;septembre&nbsp;2023)
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#20230914">
+                    2
+                    <span className="wb-invisible">
+                      Semaine de la culture scientifique
+                    </span>
                   </a>
                 </li>
                 <li>
                   <a href="#20230918">
-                    2
+                    3
                     <span className="wb-invisible">
-                      From Weekly Acquisitions List 23-37
-                      (September&nbsp;15,&nbsp;2023)
+                      Provenant de la Liste hebdomadaire des acquisitions 23-37
+                      (15&nbsp;septembre&nbsp;2023)
                     </span>
                   </a>
                 </li>
                 <li>
                   <a href="#20230911">
-                    3
+                    4
                     <span className="wb-invisible">
-                      From Weekly Acquisitions List 23-36
-                      (September&nbsp;8,&nbsp;2023)
+                      Provenant de la Liste hebdomadaire des acquisitions 23-36
+                      (8&nbsp;septembre&nbsp;2023)
                     </span>
                   </a>
                 </li>
                 <li>
                   <a href="#20230908">
-                    4
-                    <span className="wb-invisible">
-                      September 8&mdash;Linguistic Duality Day
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#20230901">
                     5
                     <span className="wb-invisible">
-                      From Weekly Acquisitions List 23-35
-                      (September&nbsp;1,&nbsp;2023)
+                      Journée du 8 septembre&nbsp;&ndash;&nbsp;La journée de la
+                      dualité linguistique
                     </span>
                   </a>
                 </li>
               </ul>
 
               <div className="tabpanels">
-                <div role="tabpanel" className="in fade" id="20230914">
+                <div role="tabpanel" className="in fade" id="20230925">
                   <div className="panel panel-primary">
                     <header className="panel-heading text-center mrgn-lft-0 mrgn-right-0">
-                      <h2 className="mrgn-tp-sm">Science Literacy Week</h2>
+                      <h2 className="mrgn-tp-sm">{`Provenant de la Liste hebdomadaire des acquisitions 23-38 (22&nbsp;septembre&nbsp;2023)`}</h2>
+                    </header>
+                    <div className="panel-body">
+                      <ul className="text-center list-unstyled">
+                        <li className="col-md-4">
+                          {" "}
+                          <a
+                            href="https://publications.gc.ca/pub?id=9.927519&amp;sl=1"
+                            style={{ color: "#000" }}
+                          >
+                            {" "}
+                            <img
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_CC273-3-26-2023-fra.jpg"
+                              alt=""
+                              className="img-thumbnail"
+                            />
+                            <br />
+                            {`Considérations relatives à la protection de la vie privée pendant la COVID-19`}
+                          </a>
+                        </li>
+                        <li className="col-md-4">
+                          {" "}
+                          <a
+                            href="https://publications.gc.ca/pub?id=9.922751&amp;sl=1"
+                            style={{ color: "#000" }}
+                          >
+                            {" "}
+                            <img
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_FR5-218-2023-fra.jpg"
+                              alt=""
+                              className="img-thumbnail"
+                            />
+                            <br />
+                            {`La compréhension de points de vue des américains sur des questions présentant un intérêt majeur pour les canadiens`}
+                          </a>
+                        </li>
+                        <li className="col-md-4">
+                          {" "}
+                          <a
+                            href="https://publications.gc.ca/pub?id=9.927649&amp;sl=1"
+                            style={{ color: "#000" }}
+                          >
+                            {" "}
+                            <img
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_XC75-1-1-441-10-fra.jpg"
+                              alt=""
+                              className="img-thumbnail"
+                            />
+                            <br />
+                            {`Les entreprises canadiennes d&apos;exploitation et d&apos;exploration minières actives à l&apos;étranger&nbsp;: conséquences pour les milieux naturels et les droits de la personne`}
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div role="tabpanel" className="out fade" id="20230914">
+                  <div className="panel panel-primary">
+                    <header className="panel-heading text-center mrgn-lft-0 mrgn-right-0">
+                      <h2 className="mrgn-tp-sm">
+                        Semaine de la culture scientifique
+                      </h2>
                     </header>
                     <div className="panel-body">
                       <p>
-                        From September 18 to 24, 2023, let’s celebrate the
-                        Science Literacy Week under the theme of energy. Each
-                        year, this week allows children and families to discover
-                        and appreciate Canadian science in all its diversity.
-                        Consult our publications to learn about Canada’s energy
-                        future and the science and engineering promotion
-                        initiative.
+                        Du 18 au 24 septembre 2023, célébrons la Semaine de la
+                        Culture scientifique sous le thème de l’énergie. Chaque
+                        année, cette semaine permet aux enfants et aux familles
+                        de découvrir et d’apprécier la science canadienne dans
+                        toute sa diversité. Consultez nos publications afin d’en
+                        apprendre sur l’avenir énergétique du Canada et la
+                        promotion des sciences et du génie.
                       </p>
                       <ul className="text-center list-unstyled">
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.904168&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.904169&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_Fs23-643-2021-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_Fs23-643-2021-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Ocean Decade focus group for educators: August 18,
-                            2021, 1:30 to 3:00pm EDT: summary report
+                            Décennie des Nations Unies pour les sciences
+                            océaniques, groupe de discussion pour les éducateurs
+                            : le 18 août 2021 de 13 h 30 à 15 h (HAE)&nbsp;:
+                            rapport sommaire
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.869496&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.869502&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_NM34-9-2018-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_NM34-9-2018-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            {`Exploring Canada's energy future: a lesson plan for
-                              Canadian geography and science classes, grades 9
-                              through 11`}
+                            Explorer l&apos;avenir énergétique du Canada&nbsp;:
+                            un plan de cours pour les classes de 9e et 10e année
+                            en science et en géographie
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.899424&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.899425&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_NS3-62-1-2021-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_NS3-62-1-2021-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Evaluation of the science and engineering promotion
-                            initiative: PromoScience
+                            Évaluation de l&apos;initiative de promotion des
+                            sciences et du génie&nbsp;: PromoScience
                           </a>
                         </li>
                       </ul>
@@ -244,8 +315,8 @@ export default function Home() {
                   <div className="panel panel-primary">
                     <header className="panel-heading text-center mrgn-lft-0 mrgn-right-0">
                       <h2 className="mrgn-tp-sm">
-                        From Weekly Acquisitions List 23-37
-                        (September&nbsp;15,&nbsp;2023)
+                        Provenant de la Liste hebdomadaire des acquisitions
+                        23-37 (15&nbsp;septembre&nbsp;2023)
                       </h2>
                     </header>
                     <div className="panel-body">
@@ -253,51 +324,53 @@ export default function Home() {
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.927267&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.927268&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_En14-494-1-2023-1-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_En14-494-1-2023-1-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Single-Use Plastics Prohibition Regulations:
-                            technical guidelines
+                            Règlement interdisant les plastiques à usage
+                            unique&nbsp;: lignes directrices techniques
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.922414&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.922416&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_PH4-194-2023-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_PH4-194-2023-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Future lives: basic needs at risk
+                            Vies futures&nbsp;: les besoins fondamentaux en
+                            danger
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.922655&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.922656&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_PH4-196-2023-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_PH4-196-2023-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            The future of generative AI: what could we see five
-                            years following the launch of ChatGPT?
+                            L&apos;avenir de l&apos;IA générative&nbsp;: que
+                            pourrait-on voir cinq ans après le lancement de
+                            ChatGPT?
                           </a>
                         </li>
                       </ul>
@@ -309,8 +382,8 @@ export default function Home() {
                   <div className="panel panel-primary">
                     <header className="panel-heading text-center mrgn-lft-0 mrgn-right-0">
                       <h2 className="mrgn-tp-sm">
-                        From Weekly Acquisitions List 23-36
-                        (September&nbsp;8,&nbsp;2023)
+                        Provenant de la Liste hebdomadaire des acquisitions
+                        23-36 (8&nbsp;septembre&nbsp;2023)
                       </h2>
                     </header>
                     <div className="panel-body">
@@ -318,50 +391,53 @@ export default function Home() {
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.924012&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.927029&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_CC273-3-15-2022-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_CC273-3-15-2022-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
-                            <br />
-                            The importance of disconnecting from work
+                            <br />{" "}
+                            {`L&apos;importance de se déconnecter du travail `}
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.922332&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.922334&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_Iu122-6-2023-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_Iu122-6-2023-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Modernizing the Copyright Board: status update
+                            La modernisation de la Commission du droit
+                            d&apos;auteur&nbsp;: état des lieux
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.923704&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.923705&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_Iu54-124-2023-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_Iu54-124-2023-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Canada needs more grocery competition: Competition
-                            Bureau retail grocery market study report
+                            Le Canada a besoin de plus de concurrence dans le
+                            secteur de l&apos;épicerie&nbsp;: rapport de
+                            l&apos;étude de marché sur l&apos;épicerie de détail
+                            du Bureau de la concurrence
                           </a>
                         </li>
                       </ul>
@@ -373,137 +449,74 @@ export default function Home() {
                   <div className="panel panel-primary">
                     <header className="panel-heading text-center mrgn-lft-0 mrgn-right-0">
                       <h2 className="mrgn-tp-sm">
-                        September 8&mdash;Linguistic Duality Day
+                        Journée du 8 septembre&nbsp;&ndash;&nbsp;La journée de
+                        la dualité linguistique
                       </h2>
                     </header>
                     <div className="panel-body">
                       <p>
-                        On September 8th, let’s celebrate Linguistic Duality
-                        Day. In 2009, former Clerk of the Privy Council Wayne G.
-                        Wouters announced that the second Thursday in September
-                        would be designated as Linguistic Duality Day in the
-                        public service. To learn more about substantive equality
-                        of official languages, the Official Languages Act and
-                        action plans, we invite you to consult these
-                        publications.
+                        Le 8 septembre, célébrons la journée de la dualité
+                        linguistique. En 2009, l’ancien greffier du Conseil
+                        privé Wayne G. Wouters annonçait que le deuxième jeudi
+                        de septembre serait désigné Journée de la dualité
+                        linguistique dans la fonction publique fédérale. Pour en
+                        apprendre davantage sur l&apos;égalité réelle des
+                        langues officielles, la Loi sur les langues officielles
+                        et les plans d’action, nous vous invitons à consulter
+                        ces publications.
                       </p>
                       <ul className="text-center list-unstyled">
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.921606&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.921608&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_CH14-39-2023-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_CH14-39-2023-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Action plan for official languages 2023-2028:
-                            protection, promotion, collaboration
+                            Plan d&apos;action pour les langues officielles
+                            2023-2028&nbsp;: protection, promotion,
+                            collaboration
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.896030&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.896034&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_CH14-50-2021-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_CH14-50-2021-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            English and French: towards a substantive equality
-                            of official languages in Canada
+                            Français et anglais&nbsp;: vers une égalité réelle
+                            des langues officielles au Canada
                           </a>
                         </li>
                         <li className="col-md-4">
                           {" "}
                           <a
-                            href="https://publications.gc.ca/pub?id=9.875922&amp;sl=0"
+                            href="https://publications.gc.ca/pub?id=9.875923&amp;sl=1"
                             style={{ color: "#000" }}
                           >
                             {" "}
                             <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_CH14-41-2019-eng.jpg"
+                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_CH14-41-2019-fra.jpg"
                               alt=""
                               className="img-thumbnail"
                             />
                             <br />
-                            Summary document: engaging Canadians as a step
-                            towards modernizing the Official Languages Act
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
-                <div role="tabpanel" className="out fade" id="20230901">
-                  <div className="panel panel-primary">
-                    <header className="panel-heading text-center mrgn-lft-0 mrgn-right-0">
-                      <h2 className="mrgn-tp-sm">
-                        From Weekly Acquisitions List 23-35
-                        (September&nbsp;1,&nbsp;2023)
-                      </h2>
-                    </header>
-                    <div className="panel-body">
-                      <ul className="text-center list-unstyled">
-                        <li className="col-md-4">
-                          {" "}
-                          <a
-                            href="https://publications.gc.ca/pub?id=9.918862&amp;sl=0"
-                            style={{ color: "#000" }}
-                          >
-                            {" "}
-                            <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/1_Em20-170-2023-eng.jpg"
-                              alt=""
-                              className="img-thumbnail"
-                            />
-                            <br />
-                            Report summary: empowering youth for post-secondary
-                            education preparedness
-                          </a>
-                        </li>
-                        <li className="col-md-4">
-                          {" "}
-                          <a
-                            href="https://publications.gc.ca/pub?id=9.926019&amp;sl=0"
-                            style={{ color: "#000" }}
-                          >
-                            {" "}
-                            <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/2_Ci4-226-2023-eng.jpg"
-                              alt=""
-                              className="img-thumbnail"
-                            />
-                            <br />
-                            2022-23 newcomer services campaign advertising
-                            campaign evaluation tool (ACET): methodological
-                            report
-                          </a>
-                        </li>
-                        <li className="col-md-4">
-                          {" "}
-                          <a
-                            href="https://publications.gc.ca/pub?id=9.921314&amp;sl=0"
-                            style={{ color: "#000" }}
-                          >
-                            {" "}
-                            <img
-                              src="https://publications.gc.ca/site/images/couvertures-covers/2023/3_PS4-299-2023-eng.jpg"
-                              alt=""
-                              className="img-thumbnail"
-                            />
-                            <br />
-                            Firearms safety public awareness campaign: final
-                            integrated report
+                            Document synthèse&nbsp;: à la rencontre des
+                            Canadiens en vue de moderniser la Loi sur les
+                            langues officielles
                           </a>
                         </li>
                       </ul>
@@ -513,13 +526,14 @@ export default function Home() {
               </div>
             </div>
             <p>
-              To browse other recently added publications, consult the 
-              <a href="weeklyAcquisitionList/lists.html">
-                Weekly Acquisitions Lists
+              Pour parcourir d&apos;autres publications ajoutées récemment,
+              veuillez consulter les 
+              <a href="listeAcquisitionHebdomadaire/listes.html">
+                Listes hebdomadaires des acquisitions
               </a>
-              . You can also browse 
-              <a href="browse/featuredPublications.html">
-                recently featured publications
+              . Vous pouvez aussi parcourir les 
+              <a href="parcourir/publicationsEnVedette.html">
+                publications récemment mises en vedette
               </a>
               .
             </p>
@@ -527,97 +541,105 @@ export default function Home() {
         </div>
         <div className="row">
           <section className="col-md-8">
-            <h2>Topics</h2>
+            <h2>Sujets</h2>
             <div className="row">
               <section className="col-md-6">
                 <h3 className="h5">
-                  <a href="browse/index.html">
-                    Browse Government of Canada publications
+                  <a href="parcourir/index.html">
+                    Parcourir les publications du gouvernement du Canada
                   </a>
                 </h3>
                 <p>
-                  Select from a range of options to browse publications in our
-                  collection
+                  Choisissez parmi une gamme d’options pour consulter des listes
+                  de publications organisées de diverses façons
                 </p>
               </section>
               <section className="col-md-6">
                 <h3 className="h5">
-                  <a href="services.html">Services for government</a>
+                  <a href="services.html">Services offerts au gouvernement</a>
                 </h3>
                 <p>
-                  Submit a publication to our collection, get an International
-                  Standard Book Number (ISBN) and access other services
+                  Soumettez une publication à notre catalogue, obtenez un Numéro
+                  international normalisé de livre (ISBN) et ayez accès à
+                  d’autres services
                 </p>
               </section>
               <div className="clearfix"></div>
               <section className="col-md-6">
                 <h3 className="h5">
-                  <a href="libraries/services.html">Library community</a>
+                  <a href="bibliotheques/services.html">
+                    Communauté des bibliothèques
+                  </a>
                 </h3>
                 <p>
-                  Find out about our work with the Canadian library community to
-                  give Canadians access to government publications
+                  Renseignez-vous sur les activités que nous menons auprès de la
+                  communauté des bibliothèques canadiennes pour que les
+                  Canadiens aient accès aux publications du gouvernement
                 </p>
               </section>
               <section className="col-md-6">
                 <h3 className="h5">
-                  <a href="programs/aboutDsp.html">Learn about what we do</a>
+                  <a href="programmes/aProposPsd.html">À propos de nous</a>
                 </h3>
                 <p>
-                  Learn about our history, our services and activities and how
-                  we fulfill our mandate
+                  Renseignez-vous sur notre histoire, sur nos services et sur
+                  nos activités ainsi que sur la manière dont nous nous
+                  acquittons de notre mandat
                 </p>
               </section>
               <div className="clearfix"></div>
               <section className="col-md-6">
                 <h3 className="h5">
-                  <a href="contact/contactUs.html">
-                    Contact Government of Canada Publications
+                  <a href="contact/contactezNous.html">
+                    Contactez Publications du gouvernement du Canada
                   </a>
                 </h3>
                 <p>
-                  Reach Government of Canada Publications by contact form,
-                  phone, mail or email
+                  Communiquez avec les Publications du gouvernement du Canada
+                  par téléphone, par courrier ou par courriel
                 </p>
               </section>
             </div>
           </section>
           <aside className="col-md-4 mrgn-tp-lg">
             <div className="well">
-              <h2 className="mrgn-tp-0">Most requested publications</h2>
+              <h2 className="mrgn-tp-0">Publications les plus demandées</h2>
               <ul className="lst-spcd">
                 <li>
-                  <a href="https://publications.gc.ca/pub?id=9.801815&amp;sl=0">
-                    Canadian firearms safety course / Canadian Firearms Program
+                  <a href="https://publications.gc.ca/pub?id=9.804880&amp;sl=1">
+                    Code national du bâtiment&nbsp;&ndash;&nbsp;Canada&nbsp;2015
                   </a>
                 </li>
                 <li>
-                  <a href="https://publications.gc.ca/pub?id=9.804878&amp;sl=0">
-                    National building code of Canada&nbsp;2015
+                  <a href="https://publications.gc.ca/pub?id=9.607518&amp;sl=1">
+                    S&apos;identifier et identifier des personnes
                   </a>
                 </li>
                 <li>
-                  <a href="https://publications.gc.ca/pub?id=9.690094&amp;sl=0">
-                    Passport applications for children under the age of&nbsp;16
+                  <a href="https://publications.gc.ca/pub?id=9.644018&amp;sl=1">
+                    Construction de maison à ossature de
+                    bois&nbsp;&ndash;&nbsp;Canada
                   </a>
                 </li>
               </ul>
               <p>
-                We invite you to view the complete lists of{" "}
-                <a href="browse/topDownloads.html">top downloads</a>.
+                Nous vous invitons à consulter les listes complètes des{" "}
+                <a href="parcourir/telechargementsPopulaires.html">
+                  publications les plus téléchargées
+                </a>
+                .
               </p>
             </div>
           </aside>
         </div>
-
         <div className="row pagedetails">
           <div className="clear visible-xs"></div>
           <div className="col-md-6 col-sm-6 col-lg-4 mrgn-tp-sm">
             <a
               className="btn btn-default btn-block"
-              href="https://www.canada.ca/en/report-problem"
+              href="https://www.canada.ca/fr/signaler-probleme.html"
             >
-              Report a problem or mistake on this page
+              Signaler un problème ou une erreur sur cette page
             </a>
           </div>
           <div className="col-md-6 col-xs-6 text-right">
@@ -629,9 +651,9 @@ export default function Home() {
           <div className="clear visible-xs"></div>
           <div className="col-xs-12 datemod">
             <dl id="wb-dtmd">
-              <dt>Date modified:&#32;</dt>
+              <dt>Date de modification&#160;:&#32;</dt>
               <dd>
-                <time property="dateModified">2023-09-18</time>
+                <time property="dateModified">2023-09-25</time>
               </dd>
             </dl>
           </div>

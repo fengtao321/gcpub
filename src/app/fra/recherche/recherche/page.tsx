@@ -8,98 +8,30 @@ import Script from "next/script";
 export default function Search() {
   return (
     <>
-      <Script src="/js/jquery-2.2.4.min.js" />
-      <Script src="/js/header.js" />
-      <Script src="/js/wet-boew.min.js" />
-      <Script src="/js/theme.min.js" />
-      <Script src="/js/gc-thematique.min.js" />
-      <Header href="/fra/recherche/recherche.html"></Header>
+      <Header href="/eng/search/search.html"></Header>
       <main role="main" property="mainContentOfPage" className="container">
         <h1 property="name" id="wb-cont" className="mrgn-tp-md">
-          Basic search results
+          Résultats de la recherche simple
         </h1>
         <div className="row">
+          {" "}
           <div className="col-md-8">
+            {" "}
             <div className="mrgn-bttm-md">
               {" "}
-              2,856 results for <em>test</em> sorted by relevance descending{" "}
+              2 856 résultats pour &laquo;&nbsp;<em>test</em>&nbsp;&raquo; trié
+              par pertinence en ordre décroissant{" "}
             </div>
             <ol className="list-unstyled" start={1}>
               <li className="mrgn-bttm-lg">
-                <a
-                  className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588398/publication.html"
-                >
-                  <span lang="fr">
-                    {" "}
-                    Comptes rendus des interviewers sur le Test du recensement
-                    national{" "}
-                  </span>
-                  <span className="wb-inv">CS92-N0060/4-1989-PDF</span>
-                </a>
-                <div className="mrgn-lft-sm">
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Date:{" "}
-                    </div>
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">1989.</span>{" "}
-                    </div>
-                  </div>
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Catalogue number:{" "}
-                    </div>
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      <span lang="fr">CS92-N0060/4-1989-PDF</span>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Department/Agency:{" "}
-                    </div>
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">Statistique Canada. </span>{" "}
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
-                    </div>
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Format:
-                    </div>
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      PDF{" "}
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li className="mrgn-bttm-lg">
                 {" "}
                 <a
                   className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588400/publication.html"
+                  href="https://publications.gc.ca/site/fra/9.588398/publication.html"
                 >
                   {" "}
-                  <span lang="fr">
-                    {" "}
-                    Évaluation du service auxiliaire téléphonique pour le Test
-                    du recensement national{" "}
-                  </span>{" "}
-                  <span className="wb-inv">CS92-N0060/3-1989-PDF</span>
+                  Comptes rendus des interviewers sur le Test du recensement
+                  national <span className="wb-inv">CS92-N0060/4-1989-PDF</span>
                 </a>{" "}
                 <div className="mrgn-lft-sm">
                   {" "}
@@ -107,275 +39,7 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Date:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">1989.</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Catalogue number:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">CS92-N0060/3-1989-PDF</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Department/Agency:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">Statistique Canada. </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
-                    </div>
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Format:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      PDF{" "}
-                    </div>
-                  </div>{" "}
-                </div>{" "}
-              </li>{" "}
-              <li className="mrgn-bttm-lg">
-                {" "}
-                <a
-                  className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588402/publication.html"
-                >
-                  {" "}
-                  <span lang="fr">
-                    {" "}
-                    Évaluation des opérations de codage dans le cadre du Test du
-                    recensement national{" "}
-                  </span>{" "}
-                  <span className="wb-inv">CS92-N0060/5-1989-PDF</span>
-                </a>{" "}
-                <div className="mrgn-lft-sm">
-                  {" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Date:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">1989.</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Catalogue number:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">CS92-N0060/5-1989-PDF</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Department/Agency:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">Statistique Canada. </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
-                    </div>
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Format:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      PDF{" "}
-                    </div>
-                  </div>{" "}
-                </div>{" "}
-              </li>{" "}
-              <li className="mrgn-bttm-lg">
-                {" "}
-                <a
-                  className="h5"
-                  href="https://publications.gc.ca/site/eng/9.605064/publication.html"
-                >
-                  {" "}
-                  <span lang="fr">
-                    {" "}
-                    Analyse des données linguistiques{" "}
-                  </span>{" "}
-                  <span className="wb-inv">CS92-N0020/14-1994F-PDF</span>
-                </a>{" "}
-                <div className="mrgn-lft-sm">
-                  {" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Date:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">1994.</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Catalogue number:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">CS92-N0020/14-1994F-PDF</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Department/Agency:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">Statistique Canada. </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
-                    </div>
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Format:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      PDF{" "}
-                    </div>
-                  </div>{" "}
-                </div>{" "}
-              </li>{" "}
-              <li className="mrgn-bttm-lg">
-                {" "}
-                <a
-                  className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588394/publication.html"
-                >
-                  {" "}
-                  <span lang="fr">
-                    {" "}
-                    Test du recensement national et intégration des
-                    recommandations du processus de consultation sur le contenu
-                    du recensement de 1991{" "}
-                  </span>{" "}
-                  <span className="wb-inv">CS92-N0060/2-1989-PDF</span>
-                </a>{" "}
-                <div className="mrgn-lft-sm">
-                  {" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Date:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">1989.</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Catalogue number:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">CS92-N0060/2-1989-PDF</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Department/Agency:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">Statistique Canada. </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
-                    </div>
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Format:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      PDF{" "}
-                    </div>
-                  </div>{" "}
-                </div>{" "}
-              </li>{" "}
-              <li className="mrgn-bttm-lg">
-                {" "}
-                <a
-                  className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588397/publication.html"
-                >
-                  {" "}
-                  National Census Test interviewer debriefing{" "}
-                  <span className="wb-inv">CS92-N0060/4-1989-PDF</span>
-                </a>{" "}
-                <div className="mrgn-lft-sm">
-                  {" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Date:{" "}
+                      Date&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
@@ -386,7 +50,7 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Catalogue number:{" "}
+                      Numéro de catalogue&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
@@ -397,19 +61,19 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Department/Agency:{" "}
+                      Ministère/Organisme&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
-                      Statistics Canada.{" "}
+                      Statistique Canada.{" "}
                     </div>{" "}
                   </div>{" "}
                   <div className="row">
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
+                      Type de publication:
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
+                      Série
                     </div>
                   </div>{" "}
                   <div className="row">
@@ -427,144 +91,11 @@ export default function Search() {
                 {" "}
                 <a
                   className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588396/publication.html"
+                  href="https://publications.gc.ca/site/fra/9.588400/publication.html"
                 >
                   {" "}
-                  <span lang="fr">
-                    {" "}
-                    Considérations relatives à la Loi sur la protection des
-                    renseignements personnels - Test du recensement national et
-                    recensement de 1991{" "}
-                  </span>{" "}
-                  <span className="wb-inv">CS92-N0060/6-1989-PDF</span>
-                </a>{" "}
-                <div className="mrgn-lft-sm">
-                  {" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Date:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">1989.</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Catalogue number:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">CS92-N0060/6-1989-PDF</span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Department/Agency:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      <span lang="fr">Statistique Canada. </span>{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
-                    </div>
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Format:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      PDF{" "}
-                    </div>
-                  </div>{" "}
-                </div>{" "}
-              </li>{" "}
-              <li className="mrgn-bttm-lg">
-                {" "}
-                <a
-                  className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588401/publication.html"
-                >
-                  {" "}
-                  Evaluation of coding operations for the National Census Test{" "}
-                  <span className="wb-inv">CS92-N0060/5-1989-PDF</span>
-                </a>{" "}
-                <div className="mrgn-lft-sm">
-                  {" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Date:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      1989.{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Catalogue number:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      CS92-N0060/5-1989-PDF{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    {" "}
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      {" "}
-                      Department/Agency:{" "}
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      Statistics Canada.{" "}
-                    </div>{" "}
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
-                    </div>
-                  </div>{" "}
-                  <div className="row">
-                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Format:
-                    </div>{" "}
-                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      {" "}
-                      PDF{" "}
-                    </div>
-                  </div>{" "}
-                </div>{" "}
-              </li>{" "}
-              <li className="mrgn-bttm-lg">
-                {" "}
-                <a
-                  className="h5"
-                  href="https://publications.gc.ca/site/eng/9.588399/publication.html"
-                >
-                  {" "}
-                  Evaluation of the telephone assistance service for the
-                  National Census Test{" "}
+                  Évaluation du service auxiliaire téléphonique pour le Test du
+                  recensement national{" "}
                   <span className="wb-inv">CS92-N0060/3-1989-PDF</span>
                 </a>{" "}
                 <div className="mrgn-lft-sm">
@@ -573,7 +104,7 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Date:{" "}
+                      Date&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
@@ -584,7 +115,7 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Catalogue number:{" "}
+                      Numéro de catalogue&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
@@ -595,19 +126,19 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Department/Agency:{" "}
+                      Ministère/Organisme&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
-                      Statistics Canada.{" "}
+                      Statistique Canada.{" "}
                     </div>{" "}
                   </div>{" "}
                   <div className="row">
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
+                      Type de publication:
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
+                      Série
                     </div>
                   </div>{" "}
                   <div className="row">
@@ -625,12 +156,12 @@ export default function Search() {
                 {" "}
                 <a
                   className="h5"
-                  href="https://publications.gc.ca/site/eng/9.575553/publication.html"
+                  href="https://publications.gc.ca/site/fra/9.588402/publication.html"
                 >
                   {" "}
-                  Analysis of income components National Census Test (N.C.T.)
-                  November, 1993{" "}
-                  <span className="wb-inv">CS92-N0020/23-1994E-PDF</span>
+                  Évaluation des opérations de codage dans le cadre du Test du
+                  recensement national{" "}
+                  <span className="wb-inv">CS92-N0060/5-1989-PDF</span>
                 </a>{" "}
                 <div className="mrgn-lft-sm">
                   {" "}
@@ -638,7 +169,71 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Date:{" "}
+                      Date&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      1989.{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Numéro de catalogue&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      CS92-N0060/5-1989-PDF{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Ministère/Organisme&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      Statistique Canada.{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Type de publication:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      Série
+                    </div>
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Format:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      PDF{" "}
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </li>{" "}
+              <li className="mrgn-bttm-lg">
+                {" "}
+                <a
+                  className="h5"
+                  href="https://publications.gc.ca/site/fra/9.605064/publication.html"
+                >
+                  {" "}
+                  Analyse des données linguistiques{" "}
+                  <span className="wb-inv">CS92-N0020/14-1994F-PDF</span>
+                </a>{" "}
+                <div className="mrgn-lft-sm">
+                  {" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Date&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
@@ -649,30 +244,432 @@ export default function Search() {
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Catalogue number:{" "}
+                      Numéro de catalogue&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
-                      CS92-N0020/23-1994E-PDF{" "}
+                      CS92-N0020/14-1994F-PDF{" "}
                     </div>{" "}
                   </div>{" "}
                   <div className="row">
                     {" "}
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
                       {" "}
-                      Department/Agency:{" "}
+                      Ministère/Organisme&nbsp;:{" "}
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
                       {" "}
-                      Statistics Canada.{" "}
+                      Statistique Canada.{" "}
                     </div>{" "}
                   </div>{" "}
                   <div className="row">
                     <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
-                      Publication type:
+                      Type de publication:
                     </div>{" "}
                     <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
-                      Series
+                      Série
+                    </div>
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Format:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      PDF{" "}
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </li>{" "}
+              <li className="mrgn-bttm-lg">
+                {" "}
+                <a
+                  className="h5"
+                  href="https://publications.gc.ca/site/fra/9.588394/publication.html"
+                >
+                  {" "}
+                  Test du recensement national et intégration des
+                  recommandations du processus de consultation sur le contenu du
+                  recensement de 1991{" "}
+                  <span className="wb-inv">CS92-N0060/2-1989-PDF</span>
+                </a>{" "}
+                <div className="mrgn-lft-sm">
+                  {" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Date&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      1989.{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Numéro de catalogue&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      CS92-N0060/2-1989-PDF{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Ministère/Organisme&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      Statistique Canada.{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Type de publication:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      Série
+                    </div>
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Format:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      PDF{" "}
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </li>{" "}
+              <li className="mrgn-bttm-lg">
+                {" "}
+                <a
+                  className="h5"
+                  href="https://publications.gc.ca/site/fra/9.588397/publication.html"
+                >
+                  {" "}
+                  <span lang="en">
+                    {" "}
+                    National Census Test interviewer debriefing{" "}
+                  </span>{" "}
+                  <span className="wb-inv">CS92-N0060/4-1989-PDF</span>
+                </a>{" "}
+                <div className="mrgn-lft-sm">
+                  {" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Date&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">1989.</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Numéro de catalogue&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">CS92-N0060/4-1989-PDF</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Ministère/Organisme&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">Statistics Canada. </span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Type de publication:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      Série
+                    </div>
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Format:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      PDF{" "}
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </li>{" "}
+              <li className="mrgn-bttm-lg">
+                {" "}
+                <a
+                  className="h5"
+                  href="https://publications.gc.ca/site/fra/9.588396/publication.html"
+                >
+                  {" "}
+                  Considérations relatives à la Loi sur la protection des
+                  renseignements personnels - Test du recensement national et
+                  recensement de 1991{" "}
+                  <span className="wb-inv">CS92-N0060/6-1989-PDF</span>
+                </a>{" "}
+                <div className="mrgn-lft-sm">
+                  {" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Date&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      1989.{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Numéro de catalogue&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      CS92-N0060/6-1989-PDF{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Ministère/Organisme&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      Statistique Canada.{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Type de publication:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      Série
+                    </div>
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Format:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      PDF{" "}
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </li>{" "}
+              <li className="mrgn-bttm-lg">
+                {" "}
+                <a
+                  className="h5"
+                  href="https://publications.gc.ca/site/fra/9.588401/publication.html"
+                >
+                  {" "}
+                  <span lang="en">
+                    {" "}
+                    Evaluation of coding operations for the National Census Test{" "}
+                  </span>{" "}
+                  <span className="wb-inv">CS92-N0060/5-1989-PDF</span>
+                </a>{" "}
+                <div className="mrgn-lft-sm">
+                  {" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Date&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">1989.</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Numéro de catalogue&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">CS92-N0060/5-1989-PDF</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Ministère/Organisme&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">Statistics Canada. </span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Type de publication:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      Série
+                    </div>
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Format:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      PDF{" "}
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </li>{" "}
+              <li className="mrgn-bttm-lg">
+                {" "}
+                <a
+                  className="h5"
+                  href="https://publications.gc.ca/site/fra/9.588399/publication.html"
+                >
+                  {" "}
+                  <span lang="en">
+                    {" "}
+                    Evaluation of the telephone assistance service for the
+                    National Census Test{" "}
+                  </span>{" "}
+                  <span className="wb-inv">CS92-N0060/3-1989-PDF</span>
+                </a>{" "}
+                <div className="mrgn-lft-sm">
+                  {" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Date&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">1989.</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Numéro de catalogue&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">CS92-N0060/3-1989-PDF</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Ministère/Organisme&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">Statistics Canada. </span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Type de publication:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      Série
+                    </div>
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Format:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      PDF{" "}
+                    </div>
+                  </div>{" "}
+                </div>{" "}
+              </li>{" "}
+              <li className="mrgn-bttm-lg">
+                {" "}
+                <a
+                  className="h5"
+                  href="https://publications.gc.ca/site/fra/9.575553/publication.html"
+                >
+                  {" "}
+                  <span lang="en">
+                    {" "}
+                    Analysis of income components National Census Test (N.C.T.)
+                    November, 1993{" "}
+                  </span>{" "}
+                  <span className="wb-inv">CS92-N0020/23-1994E-PDF</span>
+                </a>{" "}
+                <div className="mrgn-lft-sm">
+                  {" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Date&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">1994.</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Numéro de catalogue&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">CS92-N0020/23-1994E-PDF</span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    {" "}
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      {" "}
+                      Ministère/Organisme&nbsp;:{" "}
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      {" "}
+                      <span lang="en">Statistics Canada. </span>{" "}
+                    </div>{" "}
+                  </div>{" "}
+                  <div className="row">
+                    <div className="col-lg-3 col-md-4 col-sm-4 col-xs-5">
+                      Type de publication:
+                    </div>{" "}
+                    <div className="col-lg-9 col-md-8 col-sm-8 col-xs-7">
+                      Série
                     </div>
                   </div>{" "}
                   <div className="row">
@@ -687,74 +684,79 @@ export default function Search() {
                 </div>{" "}
               </li>
             </ol>
-          </div>
+          </div>{" "}
           <div className="col-md-4">
+            {" "}
             <div className="panel panel-default">
+              {" "}
               <header className="panel-heading">
-                <h2 className="panel-title">Sort by</h2>
-              </header>
+                <h2 className="panel-title">Trier par</h2>
+              </header>{" "}
               <div className="panel-body">
                 <ul>
+                  {" "}
                   <li>
-                    <strong className="text-muted">Relevance</strong>{" "}
+                    <strong className="text-muted">Pertinence</strong>{" "}
                     <a
-                      href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=5&amp;psi=1"
-                      title="Sort by relevance ascending"
+                      href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=5&amp;psi=1"
+                      title="Trier par pertinence en ordre croissant"
                     >
                       <span className="glyphicon glyphicon-circle-arrow-up text-muted"></span>
                       <span className="wb-inv">
-                        Sort by relevance ascending
+                        Trier par pertinence en ordre croissant
                       </span>
                     </a>{" "}
                     <span className="wb-inv">, </span>{" "}
                     <a
-                      href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=-5&amp;psi=1"
-                      title="Sort by relevance descending"
+                      href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=-5&amp;psi=1"
+                      title="Trier par pertinence en ordre décroissant"
                     >
                       <span className="glyphicon glyphicon-circle-arrow-down text-muted"></span>
                       <span className="wb-inv">
-                        Sort by relevance descending
+                        Trier par pertinence en ordre décroissant
                       </span>
                     </a>
-                  </li>
+                  </li>{" "}
                   <li>
-                    <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=2&amp;psi=1">
-                      Catalogue number
+                    <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=2&amp;psi=1">
+                      Numéro de catalogue
                     </a>
-                  </li>
+                  </li>{" "}
                   <li>
-                    <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=3&amp;psi=1">
-                      Department/Agency
+                    <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=3&amp;psi=1">
+                      Ministère/Organisme
                     </a>
-                  </li>
+                  </li>{" "}
                   <li>
-                    <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=4&amp;psi=1">
-                      Title
+                    <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=4&amp;psi=1">
+                      Titre
                     </a>
-                  </li>
+                  </li>{" "}
                   <li>
-                    <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=-6&amp;psi=1">
-                      Year
-                    </a>{" "}
+                    <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;rq.ssp=-6&amp;psi=1">
+                      Année
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="panel panel-default">
+              {" "}
               <header className="panel-heading">
-                <h3 className="panel-title">Filters</h3>
-              </header>
+                <h3 className="panel-title">Filtres</h3>
+              </header>{" "}
               <div className="panel-body">
                 <form
                   id="filters"
                   className="indent-medium"
-                  action="https://publications.gc.ca/site/eng/search/search.html;jsessionid=36564BB9CF295CEED4C6661318061770?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on"
+                  action="https://publications.gc.ca/site/fra/recherche/recherche.html;jsessionid=78730645E243FAE9BFC8FAB7D4A726B1?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on"
                   method="GET"
                 >
                   <fieldset className="noPaddingTop">
-                    <legend className="mrgn-tp-0 mrgn-bttm-sm">Language</legend>
-                    <div className="clearfix"></div>
+                    <legend className="mrgn-tp-0 mrgn-bttm-sm">Langue</legend>{" "}
+                    <div className="clearfix"></div>{" "}
                     <div className="checkbox">
+                      {" "}
                       <input
                         id="sLF1"
                         name="sLF"
@@ -762,9 +764,9 @@ export default function Search() {
                         type="checkbox"
                         value="eng"
                       />
-                      <input type="hidden" name="_sLF" value="on" />
-                      <label htmlFor="sLF1"> English </label>
-                    </div>
+                      <input type="hidden" name="_sLF" value="on" />{" "}
+                      <label htmlFor="sLF1"> Anglais </label>{" "}
+                    </div>{" "}
                     <div className="checkbox">
                       {" "}
                       <input
@@ -775,15 +777,15 @@ export default function Search() {
                         value="fre"
                       />
                       <input type="hidden" name="_sLF" value="on" />{" "}
-                      <label htmlFor="sLF2"> French </label>{" "}
+                      <label htmlFor="sLF2"> Français </label>{" "}
                     </div>{" "}
                   </fieldset>{" "}
                   <fieldset>
                     {" "}
                     <legend className="mrgn-tp-0 mrgn-bttm-sm">
-                      Publication type
+                      Type de publication
                     </legend>{" "}
-                    <div className="clearfix"></div>
+                    <div className="clearfix"></div>{" "}
                     <div className="checkbox">
                       {" "}
                       <input
@@ -794,8 +796,8 @@ export default function Search() {
                         value="m"
                       />
                       <input type="hidden" name="_sPF" value="on" />{" "}
-                      <label htmlFor="sPF1">Monograph</label>{" "}
-                    </div>
+                      <label htmlFor="sPF1">Monographie</label>{" "}
+                    </div>{" "}
                     <div className="checkbox">
                       {" "}
                       <input
@@ -806,15 +808,15 @@ export default function Search() {
                         value="s"
                       />
                       <input type="hidden" name="_sPF" value="on" />{" "}
-                      <label htmlFor="sPF2">Periodical</label>{" "}
+                      <label htmlFor="sPF2">Périodique</label>{" "}
                     </div>{" "}
                   </fieldset>{" "}
                   <fieldset>
                     {" "}
                     <legend className="mrgn-tp-0 mrgn-bttm-sm">
-                      Department
+                      Ministère
                     </legend>{" "}
-                    <div className="clearfix"></div>
+                    <div className="clearfix"></div>{" "}
                     <div className="checkbox">
                       {" "}
                       <input
@@ -822,13 +824,14 @@ export default function Search() {
                         name="sDF"
                         className="noMarginLeft"
                         type="checkbox"
-                        value="10"
+                        value="2389"
                       />
-                      <input type="hidden" name="_sDF" value="on" />{" "}
+                      <input type="hidden" name="_sDF" value="on" />
                       <label htmlFor="sDF1">
-                        Agriculture and Agri-Food Canada
+                        Administration canadienne de la sûreté du transport
+                        aérien
                       </label>{" "}
-                    </div>
+                    </div>{" "}
                     <div className="checkbox">
                       {" "}
                       <input
@@ -836,11 +839,13 @@ export default function Search() {
                         name="sDF"
                         className="noMarginLeft"
                         type="checkbox"
-                        value="9"
+                        value="4019"
                       />
                       <input type="hidden" name="_sDF" value="on" />{" "}
-                      <label htmlFor="sDF2">Agriculture Canada</label>{" "}
-                    </div>
+                      <label htmlFor="sDF2">
+                        Affaires autochtones et du Nord Canada
+                      </label>{" "}
+                    </div>{" "}
                     <div className="checkbox">
                       {" "}
                       <input
@@ -848,14 +853,15 @@ export default function Search() {
                         name="sDF"
                         className="noMarginLeft"
                         type="checkbox"
-                        value="2624"
+                        value="113"
                       />
                       <input type="hidden" name="_sDF" value="on" />{" "}
                       <label htmlFor="sDF3">
-                        Assisted Human Reproduction Canada
+                        Affaires étrangères et Commerce international
                       </label>{" "}
                     </div>{" "}
                     <div id="hidden-depts">
+                      {" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -863,11 +869,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="17"
+                          value="133"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF4">Bank of Canada</label>{" "}
-                      </div>
+                        <label htmlFor="sDF4">
+                          Affaires indiennes et du Nord
+                        </label>{" "}
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -875,13 +883,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2486"
+                          value="4005"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF5">
-                          Canada Border Services Agency
-                        </label>{" "}
-                      </div>
+                          Affaires indiennes et du Nord Canada
+                        </label>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -889,13 +897,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="24"
+                          value="44"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF6">
-                          Canada Customs and Revenue Agency
+                          {`Agence canadienne d'évaluation environnementale`}
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -903,13 +911,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="25"
+                          value="45"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF7">
-                          Canada Deposit Insurance Corporation
+                          {`Agence canadienne d'inspection des aliments`}
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -917,11 +925,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4064"
+                          value="55"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF8">Canada Energy Regulator</label>{" "}
-                      </div>
+                        <label htmlFor="sDF8">
+                          Agence canadienne de développement international
+                        </label>{" "}
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -929,13 +939,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="31"
+                          value="4067"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF9">
-                          Canada Mortgage and Housing Corporation
+                          {`Agence d'évaluation d'impact du Canada`}
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -943,39 +953,40 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2449"
+                          value="110"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF10">Canada Revenue Agency</label>{" "}
-                      </div>
+                        <label htmlFor="sDF10">
+                          Agence de la consommation en matière financière du
+                          Canada
+                        </label>{" "}
+                      </div>{" "}
                       <div className="checkbox">
-                        {" "}
                         <input
                           id="sDF11"
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2455"
+                          value="2497"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF11">
-                          Canada School of Public Service
+                          Agence de la santé publique du Canada
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
-                        {" "}
                         <input
                           id="sDF12"
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2389"
+                          value="24"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF12">
-                          Canadian Air Transport Security Authority
+                          Agence des douanes et du revenu du Canada
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -983,13 +994,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="40"
+                          value="2486"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF13">
-                          Canadian Centre for Occupational Health and Safety
+                          Agence des services frontaliers du Canada
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -997,13 +1008,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2382"
+                          value="2449"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF14">
-                          Canadian Council of Ministers of the Environment
+                          Agence du revenu du Canada
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -1011,13 +1022,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="44"
+                          value="67"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF15">
-                          Canadian Environmental Assessment Agency
+                          Agence spatiale canadienne
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -1025,13 +1036,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="45"
+                          value="9"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF16">
-                          Canadian Food Inspection Agency
-                        </label>{" "}
-                      </div>
+                        <label htmlFor="sDF16">Agriculture Canada</label>{" "}
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -1039,13 +1048,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="47"
+                          value="10"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF17">
-                          Canadian General Standards Board
+                          Agriculture et Agroalimentaire Canada
                         </label>{" "}
-                      </div>
+                      </div>{" "}
                       <div className="checkbox">
                         {" "}
                         <input
@@ -1053,10 +1062,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="48"
+                          value="237"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF18">Canadian Grain Commission</label>{" "}
+                        <label htmlFor="sDF18">
+                          Anciens Combattants Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1065,10 +1076,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="49"
+                          value="17"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF19">Canadian Heritage</label>{" "}
+                        <label htmlFor="sDF19">Banque du Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1077,11 +1088,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="50"
+                          value="5"
                         />
-                        <input type="hidden" name="_sDF" value="on" />{" "}
+                        <input type="hidden" name="_sDF" value="on" />
                         <label htmlFor="sDF20">
-                          Canadian Human Rights Commission
+                          Bibliothèque du Parlement
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1091,11 +1102,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="52"
+                          value="234"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF21">
-                          Canadian Institute for Health Information
+                          Bureau de la sécurité des transports du Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1105,12 +1116,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="55"
+                          value="2374"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF22">
-                          Canadian International Development Agency
-                        </label>{" "}
+                        <label htmlFor="sDF22">Bureau du Conseil privé</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1119,11 +1128,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="62"
+                          value="203"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF23">
-                          Canadian Nuclear Safety Commission
+                          Bureau du surintendant des institutions financières
+                          Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1133,11 +1143,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2611"
+                          value="16"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF24">
-                          Canadian Security Intelligence Service
+                          {`Bureau du vérificateur général`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1147,10 +1157,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="67"
+                          value="4021"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF25">Canadian Space Agency</label>{" "}
+                        <label htmlFor="sDF25">
+                          {`Bureau fédéral de la statistique`}
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1159,11 +1171,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="70"
+                          value="40"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF26">
-                          Canadian Transportation Agency
+                          {`Centre canadien d'hygiène et de sécurité au travail`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1173,11 +1185,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="74"
+                          value="2807"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF27">
-                          Citizenship and Immigration Canada
+                          {`Centre de la sécurité des télécommunications (Canada)`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1187,10 +1199,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="84"
+                          value="147"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF28">Communications Canada</label>{" "}
+                        <label htmlFor="sDF28">
+                          Centre de recherches pour le développement
+                          international
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1203,7 +1218,7 @@ export default function Search() {
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF29">
-                          Communications Research Centre Canada
+                          Centre de recherches sur les communications Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1213,11 +1228,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2807"
+                          value="74"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF30">
-                          Communications Security Establishment (Canada)
+                          Citoyenneté et Immigration Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1227,11 +1242,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="89"
+                          value="200"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF31">
-                          Consumer and Corporate Affairs
+                          Commissariat à la protection de la vie privée du
+                          Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1241,11 +1257,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4053"
+                          value="50"
                         />
-                        <input type="hidden" name="_sDF" value="on" />{" "}
+                        <input type="hidden" name="_sDF" value="on" />
                         <label htmlFor="sDF32">
-                          Consumer and Corporate Affairs Canada
+                          Commission canadienne des droits de la personne
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1255,11 +1271,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="1182"
+                          value="48"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF33">
-                          Correctional Service Canada
+                          Commission canadienne des grains
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1269,11 +1285,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4040"
+                          value="62"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF34">
-                          Crown-Indigenous Relations and Northern Affairs Canada
+                          Commission canadienne de sûreté nucléaire
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1283,10 +1299,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2746"
+                          value="211"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF35">Defence R&D Canada</label>{" "}
+                        <label htmlFor="sDF35">
+                          Commission de la Fonction publique du Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1295,10 +1313,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4059"
+                          value="154"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF36">Defence Research Board</label>{" "}
+                        <label htmlFor="sDF36">
+                          Commission de réforme du droit du Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1307,10 +1327,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4004"
+                          value="84"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF37">Department of Agriculture</label>{" "}
+                        <label htmlFor="sDF37">Communications Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1319,12 +1339,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4050"
+                          value="227"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF38">
-                          Department of Communications
-                        </label>{" "}
+                        <label htmlFor="sDF38">Condition féminine Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1333,11 +1351,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4046"
+                          value="2572"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF39">
-                          Department of Energy, Mines and Resources
+                          Conseil canadien de la santé
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1347,10 +1365,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="109"
+                          value="2382"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF40">Department of Finance</label>{" "}
+                        <label htmlFor="sDF40">
+                          {`Conseil canadien des ministres de l'environnement`}
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1359,11 +1379,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="112"
+                          value="206"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF41">
-                          Department of Fisheries and Oceans
+                          {`Conseil d'examen du prix des médicaments brevetés`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1373,11 +1393,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4009"
+                          value="193"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF42">
-                          Department of Foreign Affairs and International Trade
+                          Conseil de recherches en sciences naturelles et en
+                          génie du Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1387,12 +1408,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4073"
+                          value="235"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF43">
-                          Department of Indian Affairs and Northern Development
-                        </label>{" "}
+                        <label htmlFor="sDF43">Conseil du trésor</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1401,10 +1420,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4011"
+                          value="96"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF44">Department of Justice</label>{" "}
+                        <label htmlFor="sDF44">
+                          Conseil économique du Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1413,11 +1434,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2847"
+                          value="186"
                         />
-                        <input type="hidden" name="_sDF" value="on" />{" "}
+                        <input type="hidden" name="_sDF" value="on" />
                         <label htmlFor="sDF45">
-                          Department of Mines and Technical Surveys
+                          Conseil national de recherches du Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1427,11 +1448,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4010"
+                          value="89"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF46">
-                          Department of National Defence
+                          Consommation et corporations
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1441,11 +1462,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4051"
+                          value="4053"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF47">
-                          Department of Regional Economic Expansion
+                          Consommation et corporations Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1455,12 +1476,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4055"
+                          value="4059"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF48">
-                          Department of Regional Industrial Expansion
-                        </label>{" "}
+                        <label htmlFor="sDF48">Defence Research Board</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1469,11 +1488,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4021"
+                          value="2654"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF49">
-                          Dominion Bureau of Statistics
+                          Développement des ressources humaines Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1483,11 +1502,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="96"
+                          value="2455"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF50">
-                          Economic Council of Canada
+                          École de la fonction publique du Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1500,7 +1519,7 @@ export default function Search() {
                           value="97"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF51">Elections Canada</label>{" "}
+                        <label htmlFor="sDF51">Élections Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1513,7 +1532,7 @@ export default function Search() {
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF52">
-                          Employment and Social Development Canada
+                          Emploi et Développement social Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1527,7 +1546,7 @@ export default function Search() {
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF53">
-                          Energy, Mines and Resources Canada
+                          Énergie, mines et ressources Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1537,12 +1556,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4015"
+                          value="102"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF54">
-                          Environment and Climate Change Canada
-                        </label>{" "}
+                        <label htmlFor="sDF54">Environnement Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1551,10 +1568,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="102"
+                          value="4015"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF55">Environment Canada</label>{" "}
+                        <label htmlFor="sDF55">
+                          Environnement et Changement climatique Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1563,11 +1582,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="110"
+                          value="2527"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF56">
-                          Financial Consumer Agency of Canada
+                          Gendarmerie royale du Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1577,11 +1596,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4066"
+                          value="2747"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF57">
-                          Fisheries and Environment Canada
+                          Horizons de politiques Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1591,11 +1610,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="113"
+                          value="4018"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF58">
-                          Foreign Affairs and International Trade
+                          Immigration, Réfugiés et Citoyenneté Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1605,10 +1624,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="122"
+                          value="137"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF59">Health Canada</label>{" "}
+                        <label htmlFor="sDF59">
+                          Industrie, Sciences et Technologie Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1617,10 +1638,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2572"
+                          value="134"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF60">Health Council of Canada</label>{" "}
+                        <label htmlFor="sDF60">Industrie Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1629,11 +1650,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2442"
+                          value="135"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF61">
-                          Human Resources and Skills Development Canada
+                          Industrie et sciences Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1643,11 +1664,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2542"
+                          value="4016"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF62">
-                          Human Resources and Social Development Canada
+                          Innovation, Sciences et Développement économique
+                          Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1657,11 +1679,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2654"
+                          value="52"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF63">
-                          Human Resources Development Canada
+                          {`Institut canadien d'information sur la santé`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1671,11 +1693,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4018"
+                          value="4004"
                         />
-                        <input type="hidden" name="_sDF" value="on" />{" "}
+                        <input type="hidden" name="_sDF" value="on" />
                         <label htmlFor="sDF64">
-                          Immigration, Refugees and Citizenship Canada
+                          {`Ministère de l'agriculture`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1685,11 +1707,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4067"
+                          value="4046"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF65">
-                          Impact Assessment Agency of Canada
+                          {`Ministère de l'énergie, des mines et des ressources`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1699,11 +1721,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="133"
+                          value="4051"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF66">
-                          Indian and Northern Affairs
+                          {`Ministère de l'expansion économique régionale`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1713,11 +1735,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4005"
+                          value="4055"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF67">
-                          Indian and Northern Affairs Canada
+                          {`Ministère de l'expansion industrielle régionale`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1727,11 +1749,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4019"
+                          value="4010"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF68">
-                          Indigenous and Northern Affairs Canada
+                          Ministère de la défense nationale
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1741,12 +1763,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4039"
+                          value="4011"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF69">
-                          Indigenous Services Canada
-                        </label>{" "}
+                        <label htmlFor="sDF69">Ministère de la justice</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1755,11 +1775,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="137"
+                          value="4009"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF70">
-                          Industry, Science and Technology Canada
+                          Ministère des affaires étrangères et du commerce
+                          international
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1769,11 +1790,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="135"
+                          value="4073"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF71">
-                          Industry and Science Canada
+                          Ministère des affaires indiennes et du Nord canadien
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1783,10 +1804,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="134"
+                          value="4050"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF72">Industry Canada</label>{" "}
+                        <label htmlFor="sDF72">
+                          Ministère des communications
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1795,12 +1818,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4016"
+                          value="109"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF73">
-                          Innovation, Science and Economic Development Canada
-                        </label>{" "}
+                        <label htmlFor="sDF73">Ministère des finances</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1809,11 +1830,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="147"
+                          value="2847"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF74">
-                          International Development Research Centre
+                          Ministère des mines et des relevés techniques
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1823,11 +1844,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="154"
+                          value="112"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF75">
-                          Law Reform Commission of Canada
+                          Ministère des pêches et des océans
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1837,10 +1858,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="5"
+                          value="47"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF76">Library of Parliament</label>{" "}
+                        <label htmlFor="sDF76">
+                          Office des normes générales du Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1849,10 +1872,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="178"
+                          value="70"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF77">National Energy Board</label>{" "}
+                        <label htmlFor="sDF77">
+                          Office des transports du Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1861,11 +1886,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="186"
+                          value="178"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF78">
-                          National Research Council of Canada
+                          {`Office national de l'énergie`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1875,13 +1900,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="187"
+                          value="205"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF79">
-                          National Round Table on the Environment and the
-                          Economy
-                        </label>{" "}
+                        <label htmlFor="sDF79">Parcs Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1890,10 +1912,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="192"
+                          value="4007"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF80">Natural Resources Canada</label>{" "}
+                        <label htmlFor="sDF80">Parlement</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1902,13 +1924,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="193"
+                          value="49"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF81">
-                          Natural Sciences and Engineering Research Council of
-                          Canada
-                        </label>{" "}
+                        <label htmlFor="sDF81">Patrimoine canadien</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1917,11 +1936,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="16"
+                          value="4066"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF82">
-                          Office of the Auditor General
+                          Pêches et environnement Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1931,11 +1950,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="200"
+                          value="2624"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF83">
-                          Office of the Privacy Commissioner of Canada
+                          {`Procréation assistée Canada`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1945,12 +1964,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="203"
+                          value="4064"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF84">
-                          Office of the Superintendent of Financial Institutions
-                          Canada
+                          {`Régie de l'énergie du Canada`}
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1960,10 +1978,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="205"
+                          value="4040"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF85">Parks Canada</label>{" "}
+                        <label htmlFor="sDF85">
+                          Relations Couronne-Autochtones et affaires du Nord
+                          Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1972,10 +1993,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="4007"
+                          value="2442"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF86">Parliament</label>{" "}
+                        <label htmlFor="sDF86">
+                          Ressources humaines et Développement des compétences
+                          Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -1984,11 +2008,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="206"
+                          value="2542"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF87">
-                          Patented Medicine Prices Review Board
+                          Ressources humaines et Développement social Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -1998,10 +2022,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2747"
+                          value="192"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF88">Policy Horizons Canada</label>{" "}
+                        <label htmlFor="sDF88">
+                          Ressources naturelles Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2010,10 +2036,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2374"
+                          value="2746"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF89">Privy Council Office</label>{" "}
+                        <label htmlFor="sDF89">
+                          R et D pour la défense Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2022,12 +2050,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2497"
+                          value="122"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF90">
-                          Public Health Agency of Canada
-                        </label>{" "}
+                        <label htmlFor="sDF90">Santé Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2036,12 +2062,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2426"
+                          value="2564"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF91">
-                          Public Safety and Emergency Preparedness Canada
-                        </label>{" "}
+                        <label htmlFor="sDF91">Sécurité publique Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2050,10 +2074,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2564"
+                          value="2426"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF92">Public Safety Canada</label>{" "}
+                        <label htmlFor="sDF92">
+                          Sécurité publique et Protection civile Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2062,11 +2088,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="211"
+                          value="2611"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF93">
-                          Public Service Commission of Canada
+                          Service canadien du renseignement de sécurité
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -2076,11 +2102,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="214"
+                          value="1182"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF94">
-                          Public Works and Government Services Canada
+                          Service correctionnel Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -2090,11 +2116,11 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="2527"
+                          value="4039"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
                         <label htmlFor="sDF95">
-                          Royal Canadian Mounted Police
+                          Services aux Autochtones Canada
                         </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
@@ -2107,7 +2133,7 @@ export default function Search() {
                           value="2805"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF96">Shared Services Canada</label>{" "}
+                        <label htmlFor="sDF96">Services partagés Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2116,10 +2142,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="223"
+                          value="31"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF97">Solicitor General Canada</label>{" "}
+                        <label htmlFor="sDF97">
+                          {`Société canadienne d'hypothèques et de logement`}
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2128,10 +2156,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="7"
+                          value="25"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF98">Statistics Canada</label>{" "}
+                        <label htmlFor="sDF98">
+                          {`Société d'assurance-dépôts du Canada`}
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2140,10 +2170,12 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="227"
+                          value="223"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF99">Status of Women Canada</label>{" "}
+                        <label htmlFor="sDF99">
+                          Solliciteur général Canada
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2152,10 +2184,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="1"
+                          value="7"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF100">Statutes</label>{" "}
+                        <label htmlFor="sDF100">Statistique Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2164,12 +2196,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="234"
+                          value="1"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF101">
-                          Transportation Safety Board of Canada
-                        </label>{" "}
+                        <label htmlFor="sDF101">Statuts</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2178,10 +2208,13 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="233"
+                          value="187"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF102">Transport Canada</label>{" "}
+                        <label htmlFor="sDF102">
+                          {`Table ronde nationale sur l'environnement et
+                          l'économie`}
+                        </label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2190,10 +2223,10 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="235"
+                          value="233"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF103">Treasury Board</label>{" "}
+                        <label htmlFor="sDF103">Transports Canada</label>{" "}
                       </div>{" "}
                       <div className="checkbox">
                         {" "}
@@ -2202,42 +2235,45 @@ export default function Search() {
                           name="sDF"
                           className="noMarginLeft"
                           type="checkbox"
-                          value="237"
+                          value="214"
                         />
                         <input type="hidden" name="_sDF" value="on" />{" "}
-                        <label htmlFor="sDF104">Veterans Affairs Canada</label>{" "}
+                        <label htmlFor="sDF104">
+                          Travaux publics et Services gouvernementaux Canada
+                        </label>{" "}
                       </div>{" "}
-                    </div>
+                    </div>{" "}
                     <ul id="toggle-depts-link" className="list-unstyled hidden">
                       <li id="toggle-depts" className="" tabIndex={0}>
-                        Show more
+                        Afficher plus
                       </li>
                     </ul>{" "}
-                  </fieldset>
-                  <input id="st" name="st" value={1} type="hidden" />
-                  <input id="ssti" name="ssti" value={1} type="hidden" />
-                  <input id="ast" name="ast" value="test" type="hidden" />
-                  <input id="cnst" name="cnst" type="hidden" value="" />
-                  <input id="adof" name="adof" value="true" type="hidden" />
-                  <input id="e" name="e" value={0} type="hidden" />
-                  <input id="f" name="f" value={0} type="hidden" />{" "}
+                  </fieldset>{" "}
+                  <input id="st" name="st" value="1" type="hidden" />{" "}
+                  <input id="ssti" name="ssti" type="hidden" value="1" />{" "}
+                  <input id="ast" name="ast" value="test" type="hidden" />{" "}
+                  <input id="cnst" name="cnst" type="hidden" value="" />{" "}
+                  <input id="adof" name="adof" value="true" type="hidden" />{" "}
+                  <input id="e" name="e" value="0" type="hidden" value="0" />{" "}
+                  <input id="f" name="f" value="0" type="hidden" value="0" />{" "}
                   <div className="mrgn-tp-md">
+                    {" "}
                     <input
                       className="btn btn-primary"
                       type="submit"
-                      value="Apply filters"
-                    />
+                      value="Appliquer les filtres"
+                    />{" "}
                     <a
                       className="mrgn-lft-md"
-                      href="search4d7f.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on"
-                      title="Clear filters"
+                      href="recherche4d7f.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on"
+                      title="Effacer les filtres"
                     >
-                      Clear
+                      Effacer
                     </a>{" "}
-                  </div>{" "}
-                </form>{" "}
-              </div>{" "}
-            </div>{" "}
+                  </div>
+                </form>
+              </div>
+            </div>
             <div className="panel panel-default">
               {" "}
               <div className="panel-body">
@@ -2245,14 +2281,14 @@ export default function Search() {
                 <ul>
                   {" "}
                   <li>
-                    <a href="https://publications.gc.ca/site/eng/search/search.html?st=6&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on">
+                    <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=6&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on">
                       {" "}
-                      Modify this search{" "}
+                      Modifier cette recherche{" "}
                     </a>{" "}
                   </li>{" "}
                   <li>
-                    <a href="https://publications.gc.ca/site/eng/search/advancedSearch.html">
-                      Advanced search
+                    <a href="https://publications.gc.ca/site/fra/recherche/rechercheAvancee.html">
+                      {`Recherche avancée`}
                     </a>
                   </li>{" "}
                 </ul>{" "}
@@ -2260,103 +2296,136 @@ export default function Search() {
             </div>{" "}
           </div>{" "}
         </div>{" "}
-        <h2 className="wb-inv">Result pages:</h2>{" "}
+        <h2 className="wb-inv">{`Pages de résultat`}</h2>{" "}
         <ul className="pagination">
           {" "}
           <li className="disabled">
             {" "}
             <a
-              href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=-9&amp;rq.ssp=-5"
+              href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=-9&amp;rq.ssp=-5"
               rel="prev"
             >
-              Previous{" "}
-              <span className="wb-inv">0: Page 0 of search results</span>{" "}
+              {`Page pr&eacute;c&eacute;dente`}{" "}
+              <span className="wb-inv">
+                {`0&nbsp;: Page 0 des résultats de recherche`}
+              </span>{" "}
             </a>{" "}
           </li>{" "}
           <li className="active hidden-xs">
             <a id="current_page">
-              1 <span className="wb-inv">(current page)</span>
+              1 <span className="wb-inv">(page actuelle)</span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=11&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=11&amp;rq.ssp=-5">
               {" "}
-              <span className="wb-inv">Next</span> 2
-              <span className="wb-inv">: Page 2 of search results</span>
+              <span className="wb-inv">{`Page suivante`}</span> 2
+              <span className="wb-inv">
+                {`&nbsp;: Page 2 des résultats de recherche`}
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=21&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=21&amp;rq.ssp=-5">
               {" "}
-              3<span className="wb-inv">: Page 3 of search results</span>
+              3
+              <span className="wb-inv">
+                {`&nbsp;: Page 3 des résultats de recherche`}
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=31&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=31&amp;rq.ssp=-5">
               {" "}
-              4<span className="wb-inv">: Page 4 of search results</span>
+              4
+              <span className="wb-inv">
+                &nbsp;: Page 4 des résultats de recherche
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=41&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=41&amp;rq.ssp=-5">
               {" "}
-              5<span className="wb-inv">: Page 5 of search results</span>
+              5
+              <span className="wb-inv">
+                &nbsp;: Page 5 des résultats de recherche
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=51&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=51&amp;rq.ssp=-5">
               {" "}
-              6<span className="wb-inv">: Page 6 of search results</span>
+              6
+              <span className="wb-inv">
+                &nbsp;: Page 6 des résultats de recherche
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=61&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=61&amp;rq.ssp=-5">
               {" "}
-              7<span className="wb-inv">: Page 7 of search results</span>
+              7
+              <span className="wb-inv">
+                &nbsp;: Page 7 des résultats de recherche
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=71&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=71&amp;rq.ssp=-5">
               {" "}
-              8<span className="wb-inv">: Page 8 of search results</span>
+              8
+              <span className="wb-inv">
+                &nbsp;: Page 8 des résultats de recherche
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=81&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=81&amp;rq.ssp=-5">
               {" "}
-              9<span className="wb-inv">: Page 9 of search results</span>
+              9
+              <span className="wb-inv">
+                &nbsp;: Page 9 des résultats de recherche
+              </span>
             </a>
           </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=91&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=91&amp;rq.ssp=-5">
               {" "}
-              10<span className="wb-inv">: Page 10 of search results</span>
+              10
+              <span className="wb-inv">
+                &nbsp;: Page 10 des résultats de recherche
+              </span>
             </a>
-          </li>
+          </li>{" "}
           <li className="hidden-xs">
-            <a href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=101&amp;rq.ssp=-5">
+            <a href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=101&amp;rq.ssp=-5">
               {" "}
-              11<span className="wb-inv">: Page 11 of search results</span>
+              11
+              <span className="wb-inv">
+                &nbsp;: Page 11 des résultats de recherche
+              </span>
             </a>
-          </li>
+          </li>{" "}
           <li>
             <a
-              href="https://publications.gc.ca/site/eng/search/search.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=11&amp;rq.ssp=-5"
+              href="https://publications.gc.ca/site/fra/recherche/recherche.html?st=1&amp;e=0&amp;f=0&amp;ssti=on&amp;ast=test&amp;cnst=&amp;adof=on&amp;hpp=10&amp;psi=11&amp;rq.ssp=-5"
               rel="next"
             >
-              Next<span className="wb-inv">2</span>
-              <span className="wb-inv">: Page 2 of search results</span>
+              Page suivante<span className="wb-inv">2</span>
+              <span className="wb-inv">
+                &nbsp;: Page 2 des résultats de recherche
+              </span>
             </a>
-          </li>
+          </li>{" "}
         </ul>
         <div className="row pagedetails">
           <div className="clear visible-xs"></div>
           <div className="col-md-6 col-sm-6 col-lg-4 mrgn-tp-sm">
             <a
               className="btn btn-default btn-block"
-              href="https://www.canada.ca/en/report-problem"
+              href="https://www.canada.ca/fr/signaler-probleme.html"
             >
-              Report a problem or mistake on this page
+              Signaler un problème ou une erreur sur cette page
             </a>
           </div>
           <div className="col-md-6 col-xs-6 text-right">
@@ -2368,7 +2437,7 @@ export default function Search() {
           <div className="clear visible-xs"></div>
           <div className="col-xs-12 datemod">
             <dl id="wb-dtmd">
-              <dt>Date modified:&#32;</dt>
+              <dt>Date de modification&#160;:&#32;</dt>
               <dd>
                 <time property="dateModified">2013-04-03</time>
               </dd>
