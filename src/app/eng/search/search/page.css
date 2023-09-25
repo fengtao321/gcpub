@@ -5,12 +5,10 @@
 @import url("/css/gc-thématique.min.css");
 @import url("/css/noscript.min.css");
 
-.InsideCarousel a {
-  color: #2572b4 !important;
-  text-decoration: underline !important;
-}
-
-.InsideCarousel a:visited {
-  color: #2572b4 !important;
-  text-decoration: underline !important;
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
+  position: absolute;
+  margin-left: 0;
 }

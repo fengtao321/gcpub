@@ -27,10 +27,7 @@ export default function Home() {
               than 445,700 digital publications.
             </p>
             <section className="well well-lg">
-              <form
-                action="https://publications.gc.ca/site/eng/search/search.html"
-                method="get"
-              >
+              <form action="/eng/search/search.html" method="get">
                 <h2 className="mrgn-tp-sm">Search publications</h2>
                 <input type="hidden" name="st" value="1" />
                 <input type="hidden" name="e" value="0" />

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import sigBlkEnPic from "../../../public/assets/sig-blk-en.svg";
+import sigBlkEnPic from "../../../../public/assets/sig-blk-en.svg";
 
 export default function Header() {
   return (
