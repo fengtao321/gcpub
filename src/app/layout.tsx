@@ -4,6 +4,7 @@ import Footer from "./footer/footer";
 import Header from "./header/header";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
+import React from "react";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,19 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <Script src="js/jquery-2.2.4.min.js" />
-        <Script src="js/header.js" />
-        <Script src="js/ep-pp.min.js" />
-        <Script src="js/wet-boew.min.js" />
-        <Script src="js/theme.min.js" />
-        <Script src="js/gc-thematique.min.js" />
-      </head>
+      <head></head>
 
       <body className={inter.className}>
-        <Header></Header>
         <main> {children}</main>
-        <Footer></Footer>
       </body>
     </html>
   );

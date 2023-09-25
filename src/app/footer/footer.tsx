@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import wmmsBlk from "../../../public/assets/wmms-blk.svg";
 
 export default function Footer() {
   return (
@@ -125,10 +127,7 @@ export default function Footer() {
               </ul>
             </nav>
             <div className="wtrmrk align-self-end">
-              <img
-                src="assets/wmms-blk.svg"
-                alt="Symbol of the Government of Canada"
-              />
+              <Image src={wmmsBlk} alt="Symbol of the Government of Canada" />
             </div>
           </div>
         </div>

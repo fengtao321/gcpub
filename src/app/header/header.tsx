@@ -1,4 +1,6 @@
+import Image from "next/image";
 import React from "react";
+import sigBlkEnPic from "../../../public/assets/sig-blk-en.svg";
 
 export default function Header() {
   return (
@@ -39,8 +41,8 @@ export default function Header() {
           >
             <link href="en.html" property="url" />
 
-            <img
-              src="assets/sig-blk-en.svg"
+            <Image
+              src={sigBlkEnPic}
               alt="Government of Canada"
               property="logo"
             />
@@ -51,10 +53,7 @@ export default function Header() {
 
             <meta property="name" content="Government of Canada" />
             <meta property="areaServed" typeof="Country" content="Canada" />
-            <link
-              property="logo"
-              href="assets/wmms-blk.svg"
-            />
+            <link property="logo" href="assets/wmms-blk.svg" />
           </div>
           <section
             id="wb-srch"
