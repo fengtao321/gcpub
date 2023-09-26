@@ -2254,8 +2254,8 @@ export default function Search() {
                   <input id="ast" name="ast" value="test" type="hidden" />{" "}
                   <input id="cnst" name="cnst" type="hidden" value="" />{" "}
                   <input id="adof" name="adof" value="true" type="hidden" />{" "}
-                  <input id="e" name="e" value="0" type="hidden" value="0" />{" "}
-                  <input id="f" name="f" value="0" type="hidden" value="0" />{" "}
+                  <input id="e" name="e" value="0" type="hidden" />{" "}
+                  <input id="f" name="f" value="0" type="hidden" />{" "}
                   <div className="mrgn-tp-md">
                     {" "}
                     <input

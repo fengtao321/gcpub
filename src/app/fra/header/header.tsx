@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import sigBlkEnPic from "../../../../public/assets/sig-blk-fr.svg";
 
-export default function Header({ href }) {
+export default function Header({ href }: { href: string }) {
   return (
     <header>
       <div id="wb-bnr" className="container">
