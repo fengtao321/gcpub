@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import wmmsBlk from "../../../../public/assets/wmms-blk.svg";
+import wmmsBlk from "../../../public/assets/wmms-blk.svg";
 
-export default function Footer() {
+export default function FooterComponent() {
   return (
     <div className="global-footer">
       <footer id="wb-info">
