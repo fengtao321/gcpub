@@ -1,0 +1,9 @@
+{
+  "fra": {
+    "title": "[FR]Welcome to react using react-i18next",
+    "description": {
+      "part1": "[FR]To get started, edit <1>src/App.js</1> and save to reload.",
+      "part2": "[FR]Switch language between english and german using buttons above."
+    }
+  }
+}

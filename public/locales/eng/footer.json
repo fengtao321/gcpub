@@ -1,0 +1,35 @@
+{
+  "eng": {
+    "footer": {
+      "about-this-site": "About this site",
+      "government-of-canada": "Government of Canada",
+      "all-contacts": "All contacts",
+      "departments-and-agencies": "Departments and agencies",
+      "about-government": "About government",
+      "themes-and-topics": "Themes and topics",
+      "jobs": "Jobs",
+      "business": "Business",
+      "indigenous-peoples": "Indigenous peoples",
+      "veterans-and-military": "Veterans and military",
+      "youth": "Youth",
+      "government-of-canada-corporate": "Government of Canada Corporate",
+      "social-media": "Social media",
+      "mobile-applications": "Mobile applications",
+      "about-canada-ca": "About Canada.ca",
+      "terms-and-conditions": "Terms and conditions",
+      "privacy": "Privacy",
+      "symbol-of-the-government-of-canada": "Symbol of the Government of Canada",
+      "all-contacts-link": "https://www.canada.ca/en/contact.html",
+      "departments-and-agencies-link": "https://www.canada.ca/en/government/dept.html",
+      "about-government-link": "https://www.canada.ca/en/government/system.html",
+      "jobs-link": "https://www.canada.ca/en/services/jobs.html",
+      "indigenous-peoples-link": "https://www.canada.ca/en/services/indigenous-peoples.html",
+      "veterans-and-military-link": "https://www.canada.ca/en/services/veterans-military.html",
+      "youth-link": "https://www.canada.ca/en/services/youth.html",
+      "social-media-link": "https://www.canada.ca/en/social.html",
+      "mobile-applications-link": "https://www.canada.ca/en/mobile.html",
+      "terms-and-conditions-link": "https://www.canada.ca/en/transparency/terms.html",
+      "privacy-link": "https://www.canada.ca/en/transparency/privacy.html"
+    }
+  }
+}

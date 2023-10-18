@@ -1,8 +1,11 @@
 import "./globals.css";
 
+import FooterComponent from "../components/footer/footer";
+import HeaderComponent from "../components/header/header";
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import React from "react";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +21,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head></head>
+      <head>
+        <Script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js" />
+        {/* <Script src="/js/header.js" /> */}
+        <Script src="https://publications.gc.ca/boew-wet/wet4.0ca/wet-boew/js/wet-boew.min.js" />
+        <Script src="/js/theme.min.js" />
+        {/* <Script src="/js/gc-thematique.min.js" /> */}
+      </head>
       <body className={inter.className}>
-        <main> {children}</main>
+        <HeaderComponent></HeaderComponent>
+        <main role="main" property="mainContentOfPage" className="container">
+          {children}
+        </main>
+        <FooterComponent></FooterComponent>
       </body>
     </html>
   );

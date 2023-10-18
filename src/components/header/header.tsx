@@ -1,8 +1,22 @@
-import Image from "next/image";
-import React from "react";
-import sigBlkEnPic from "../../../../public/assets/sig-blk-fr.svg";
+"use client";
 
-export default function Header({ href }: { href: string }) {
+import React, { useEffect, useState } from "react";
+import { formatLocale, i18n, translateUrl, useTranslate } from "@/i18n";
+
+import Image from "next/image";
+import Link from "next/link";
+import sigBlkEnPic from "../../../public/assets/sig-blk-en.svg";
+
+export default function HeaderComponent() {
+  const t = useTranslate();
+  const [translatedUrl, setTranslatedUrl] = useState("");
+
+  useEffect(() => {
+    const url = window.location.href;
+    formatLocale(url);
+    setTranslatedUrl(translateUrl(url));
+  }, []);
+
   return (
     <header>
       <div id="wb-bnr" className="container">
@@ -11,21 +25,21 @@ export default function Header({ href }: { href: string }) {
             id="wb-lng"
             className="col-xs-3 col-sm-12 pull-right text-right"
           >
-            <h2 className="wb-inv">Sélection de la langue</h2>
+            <h2 className="wb-inv">{t("header.language-selection")}</h2>
             <div className="row">
               <div className="col-md-12">
                 <ul className="list-inline mrgn-bttm-0">
                   <li>
-                    <a lang="en" href="en.html">
+                    <a lang="fr" href={translatedUrl}>
                       <span className="hidden-xs" translate="no">
-                        English
+                        {t("header.language-name")}
                       </span>
                       <abbr
-                        title="English"
+                        title="Fran&ccedil;ais"
                         className="visible-xs h3 mrgn-tp-sm mrgn-bttm-0 text-uppercase"
                         translate="no"
                       >
-                        en
+                        {t("header.language-abb")}
                       </abbr>
                     </a>
                   </li>
@@ -39,39 +53,36 @@ export default function Header({ href }: { href: string }) {
             resource="#wb-publisher"
             typeof="GovernmentOrganization"
           >
-            <link href={href} property="url" />
+            <link href={translatedUrl} property="url" />
+
             <Image
               src={sigBlkEnPic}
-              alt="Gouvernement du Canada"
+              alt="Government of Canada"
               property="logo"
             />
             <span className="wb-inv">
-              {" "}
-              /<span lang="en">Government of Canada</span>
+              <span lang="fr">{t("header.government-bilingual")}</span>
             </span>
 
-            <meta property="name" content="Gouvernement du Canada" />
+            <meta property="name" content="Government of Canada" />
             <meta property="areaServed" typeof="Country" content="Canada" />
-            <link
-              property="logo"
-              href="etc/designs/canada/wet-boew/assets/wmms-blk.svg"
-            />
+            <link property="logo" href="assets/wmms-blk.svg" />
           </div>
           <section
             id="wb-srch"
             className="col-lg-offset-4 col-md-offset-4 col-sm-offset-2 col-xs-12 col-sm-5 col-md-4"
           >
-            <h2>Recherche</h2>
+            <h2>{t("header.search")}</h2>
 
             <form
-              action="https://www.canada.ca/fr/sr/srb.html"
+              action={t("header.form-link")}
               method="get"
               name="cse-search-box"
               role="search"
             >
               <div className="form-group wb-srch-qry">
                 <label htmlFor="wb-srch-q" className="wb-inv">
-                  Rechercher dans Canada.ca
+                  {t("header.search-canada-ca")}
                 </label>
 
                 <input
@@ -80,10 +91,10 @@ export default function Header({ href }: { href: string }) {
                   className="wb-srch-q form-control"
                   name="q"
                   type="search"
-                  value=""
+                  defaultValue=""
                   size={34}
                   maxLength={170}
-                  placeholder="Rechercher dans Canada.ca"
+                  placeholder={t("header.search-canada-ca")}
                 />
 
                 <datalist id="wb-srch-q-ac"></datalist>
@@ -96,7 +107,7 @@ export default function Header({ href }: { href: string }) {
                   name="wb-srch-sub"
                 >
                   <span className="glyphicon-search glyphicon"></span>
-                  <span className="wb-inv">Recherche</span>
+                  <span className="wb-inv">{t("header.search")}</span>
                 </button>
               </div>
             </form>
@@ -109,142 +120,146 @@ export default function Header({ href }: { href: string }) {
         <div className="row">
           <div className="col-md-8">
             <nav className="gcweb-menu" typeof="SiteNavigationElement">
-              <h2 className="wb-inv">Menu</h2>
+              <h2 className="wb-inv">{t("header.menu")}</h2>
               <button type="button" aria-haspopup="true" aria-expanded="false">
-                <span className="wb-inv">Principales </span>Menu{" "}
+                <span className="wb-inv">Main </span>Menu
                 <span className="expicon glyphicon glyphicon-chevron-down"></span>
               </button>
-              <ul
-                role="menu"
-                aria-orientation="vertical"
-                data-ajax-replace="/content/dam/canada/sitemenu/sitemenu-v2-fr.html"
-              >
+              <ul role="menu" aria-orientation="vertical">
                 <li role="presentation">
-                  <a role="menuitem" tabIndex={-1} href="en/services/jobs.html">
-                    Emplois et milieu de travail
-                  </a>
-                </li>
-                <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/immigration-citizenship.html"
+                    href={t("header.jobs-link")}
                   >
-                    Immigration et citoyenneté
-                  </a>
+                    {t("header.jobs-and-workplace")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a role="menuitem" tabIndex={-1} href="https://voyage.gc.ca/">
-                    Voyage et tourisme
-                  </a>
-                </li>
-                <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/entreprises.html"
+                    href={t("header.immigration-citizenship-link")}
                   >
-                    Entreprises et industrie
-                  </a>
+                    {t("header.immigration-and-citizenship")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/benefits.html"
+                    href={t("header.travel-link")}
                   >
-                    Prestations
-                  </a>
+                    {t("header.travel-and-tourism")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/sante.html"
+                    href={t("header.business-link")}
                   >
-                    Santé
-                  </a>
+                    {t("header.business-and-industry")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/impots.html"
+                    href={t("header.benefits-link")}
                   >
-                    Impôts
-                  </a>
+                    {t("header.benefits")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/environnement.html"
+                    href={t("header.health-link")}
                   >
-                    Environnement et ressources naturelles
-                  </a>
+                    {t("header.health")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/defense.html"
+                    href={t("header.taxes-link")}
                   >
-                    Sécurité nationale et défense
-                  </a>
+                    {t("header.taxes")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/culture.html"
+                    href={t("header.environment-link")}
                   >
-                    Culture, histoire et sport
-                  </a>
+                    {t("header.environment-and-natural-resources")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/police.html"
+                    href={t("header.defence-link")}
                   >
-                    Services de police, justice et urgences
-                  </a>
+                    {t("header.national-security-and-defence")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="en/services/transport.html"
+                    href={t("header.culture-link")}
                   >
-                    Transport et infrastructure
-                  </a>
+                    {t("header.culture-history-and-sport")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="http://international.gc.ca/world-monde/index.aspx?lang=fra"
+                    href={t("header.policing-link")}
                   >
-                    Canada et le monde
-                  </a>
+                    {t("header.policing-justice-and-emergencies")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/finance.html"
+                    href={t("header.transport-link")}
                   >
-                    Argent et finances
-                  </a>
+                    {t("header.transport-and-infrastructure")}
+                  </Link>
                 </li>
                 <li role="presentation">
-                  <a
+                  <Link
                     role="menuitem"
                     tabIndex={-1}
-                    href="fr/services/science.html"
+                    href={t("header.international-link")}
                   >
-                    Science et innovation
-                  </a>
+                    {t("header.canada-and-the-world")}
+                  </Link>
+                </li>
+                <li role="presentation">
+                  <Link
+                    role="menuitem"
+                    tabIndex={-1}
+                    href={t("header.finance-link")}
+                  >
+                    {t("header.money-and-finances")}
+                  </Link>
+                </li>
+                <li role="presentation">
+                  <Link
+                    role="menuitem"
+                    tabIndex={-1}
+                    href={t("header.science-link")}
+                  >
+                    {t("header.science-and-innovation")}
+                  </Link>
                 </li>
               </ul>
             </nav>

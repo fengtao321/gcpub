@@ -1,0 +1,35 @@
+{
+  "fra": {
+    "footer": {
+      "about-this-site": "À propos de ce site",
+      "government-of-canada": "Gouvernement du Canada",
+      "all-contacts": "Toutes les coordonnées",
+      "departments-and-agencies": "Ministères et organismes",
+      "about-government": "À propos du gouvernement",
+      "themes-and-topics": "Thèmes et sujets",
+      "jobs": "Emplois",
+      "business": "Entreprises",
+      "indigenous-peoples": "Autochtones",
+      "veterans-and-military": "Vétérans et militaires",
+      "youth": "Jeunesse",
+      "government-of-canada-corporate": "Organisation du gouvernement du Canada",
+      "social-media": "Médias sociaux",
+      "mobile-applications": "Applications mobiles",
+      "about-canada-ca": "À propos de Canada.ca",
+      "terms-and-conditions": "Avis",
+      "privacy": "Confidentialité",
+      "symbol-of-the-government-of-canada": "Symbole du gouvernement du Canada",
+      "all-contacts-link": "https://www.canada.ca/fr/contact.html",
+      "departments-and-agencies-link": "https://www.canada.ca/fr/gouvernement/min.html",
+      "about-government-link": "https://www.canada.ca/fr/gouvernement/systeme.html",
+      "jobs-link": "https://www.canada.ca/fr/services/emplois.html",
+      "indigenous-peoples-link": "https://www.canada.ca/fr/services/autochtones.html",
+      "veterans-and-military-link": "https://www.canada.ca/fr/services/veterans-militaire.html",
+      "youth-link": "https://www.canada.ca/fr/services/jeunesse.html",
+      "social-media-link": "https://www.canada.ca/fr/sociaux.html",
+      "mobile-applications-link": "https://www.canada.ca/fr/mobile.html",
+      "terms-and-conditions-link": "https://www.canada.ca/fr/transparence/avis.html",
+      "privacy-link": "https://www.canada.ca/fr/transparence/confidentialite.html"
+    }
+  }
+}
