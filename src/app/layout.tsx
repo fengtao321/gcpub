@@ -22,10 +22,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js" />
+        <Script
+          src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://publications.gc.ca/boew-wet/wet4.0ca/wet-boew/js/wet-boew.min.js"
+          strategy="afterInteractive"
+        />
+        {/* <Script src="/js/wet-boew.min.js" /> */}
         {/* <Script src="/js/header.js" /> */}
-        <Script src="https://publications.gc.ca/boew-wet/wet4.0ca/wet-boew/js/wet-boew.min.js" />
-        <Script src="/js/theme.min.js" />
+        <Script src="/js/theme.min.js" strategy="afterInteractive" />
         {/* <Script src="/js/gc-thematique.min.js" /> */}
       </head>
       <body className={inter.className}>

@@ -1,7 +1,5 @@
 import "./page.css";
 
-import Footer from "../footer/footer";
-import Header from "../header/header";
 import React from "react";
 import Script from "next/script";
 
@@ -15,7 +13,6 @@ export default function Home() {
       <Script src="js/theme.min.js" />
       <Script src="js/gc-thematique.min.js" />
       <main role="main" property="mainContentOfPage" className="container">
-        <Header href="/eng/home.html"></Header>
         <h1 property="name" id="wb-cont" className="mrgn-tp-md">
           Publications du gouvernement du Canada
         </h1>
@@ -658,7 +655,6 @@ export default function Home() {
             </dl>
           </div>
         </div>
-        <Footer></Footer>
       </main>
     </>
   );

@@ -6,6 +6,11 @@
       "part2": "Switch language between english and german using buttons above."
     },
 
-    "home": {}
+    "home": {
+      "title": "Government of Canada Publications",
+      "pagetag": "Search our catalogue of over 566,500 publications. Access more than 445,700 digital publications.",
+      "searchfor": "Search for",
+      "find-variations": "Find variations of search terms"
+    }
   }
 }
