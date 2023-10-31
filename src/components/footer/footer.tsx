@@ -94,17 +94,17 @@ export default function FooterComponent() {
                 </li>
                 <li>
                   <Link href={t("header.international-link")}>
-                    {t("header.canada-and-the-world")}\
+                    {t("header.canada-and-the-world")}
                   </Link>
                 </li>
                 <li>
                   <Link href={t("header.finance-link")}>
-                    {t("header.money-and-finances")}\
+                    {t("header.money-and-finances")}
                   </Link>
                 </li>
                 <li>
                   <Link href={t("header.science-link")}>
-                    {t("header.science-and-innovation")}\
+                    {t("header.science-and-innovation")}
                   </Link>
                 </li>
                 <li>
